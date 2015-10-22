@@ -1,2 +1,2 @@
 Globals:
-    WEB_ROOT: '<insert dir here>'
+    web_root: '<insert dir here>'
