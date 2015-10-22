@@ -7,7 +7,7 @@ from bottle import run, static_file, template
 import sys
 import yaml
 
-WEB_ROOT = get_global_variable(WEB_ROOT)
+WEB_ROOT = get_global_variable('web_root')
 
 logging.basicConfig(stream=sys.stderr, level=logging.INFO)
 
