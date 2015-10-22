@@ -1,0 +1,16 @@
+body {
+  padding-top: 30px;
+}
+.starter-template {
+  padding: 40px 50px;
+  text-align: center;
+}
+
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
