@@ -1,6 +1,6 @@
 # production jessebot.com python file
 
-import lib
+from lib import get_global_variable
 import logging 
 from bottle import redirect, request, response, route
 from bottle import run, static_file, template
