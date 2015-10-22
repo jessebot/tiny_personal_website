@@ -1,11 +1,13 @@
 # production jessebot.com python file
+
 import logging 
 from bottle import redirect, request, response, route
 from bottle import run, static_file, template
 import sys
 import yaml
 
-WEB_ROOT = 
+stream = open(config.yaml)
+WEB_ROOT = ""
 
 logging.basicConfig(stream=sys.stderr, level=logging.INFO)
 
