@@ -1,7 +1,7 @@
 # production jessebot.com python file
 
 from lib import get_global_variable
-import logging 
+import logging
 from bottle import redirect, request, response, route
 from bottle import run, static_file, template
 import sys
@@ -31,7 +31,7 @@ def about():
 
 @route('/legacy')
 def legacy():
-    redirect ("http://legacy.jessebot.com")
+    redirect("http://legacy.jessebot.com")
 
 
 @route('/hate')
