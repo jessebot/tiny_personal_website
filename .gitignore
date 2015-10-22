@@ -3,3 +3,4 @@ terminal/*
 option.tpl
 legacy/*
 legacy
+config.yaml
