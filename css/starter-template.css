@@ -6,6 +6,12 @@ body {
   text-align: center;
 }
 
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
 
 .rotate90 {
     -webkit-transform: rotate(90deg);

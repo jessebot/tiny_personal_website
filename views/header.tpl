@@ -11,10 +11,10 @@
     <title>JesseBot.com</title>
 
     <!-- Custom styles for this template -->
-    <link href="css/starter-template.css" rel="stylesheet">
+    <!--<link href="css/starter-template.css" rel="stylesheet">-->
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap_flatdark.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
 
   </head>
