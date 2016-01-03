@@ -47,7 +47,7 @@
               <ul class="dropdown-menu" role="menu">
                 <li><a href="{{resume_pdf_download_URL}}">Download .PDF</a></li>
                 <li class="divider"></li>
-                <li><a href="resume_docx_download_URL">Download .Docx</a></li>
+                <li><a href="{{resume_docx_download_URL}}">Download .Docx</a></li>
               </ul>
               </div>
           </div>

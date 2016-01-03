@@ -56,17 +56,6 @@ def index():
                     optional_panel_button_URL=optional_panel_button_URL)
 
 
-@route('/hate')
-def hate():
-    return template('hate')
-
-
-@route('/photo')
-@route('/photo/')
-def photo():
-    redirect('http://photo.jessebot.com')
-
-
 @route('/images/<filename>')
 def images(filename):
     return static_file(filename, root='{0}/front_end/images'.format(WEB_ROOT))
@@ -80,3 +69,9 @@ def js(filename):
 @route('/css/<filename>')
 def css(filename):
     return static_file(filename, root='{0}/front_end/css'.format(WEB_ROOT))
+
+
+# example of how to create another route to something else
+@route('/hate')
+def hate():
+    return template('hate')
