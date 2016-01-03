@@ -1,0 +1,22 @@
+.padMe {
+  padding: 0px 80px 0px 80px;
+}
+
+.col-md-5.tinyPad {
+  padding-left: 50px;
+}
+
+.col-md-6.morePad {
+  padding-top: 8px;
+}
+
+.starter-template {
+  padding: 40px 25px 0px 0px;
+  text-align: center;
+}
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
