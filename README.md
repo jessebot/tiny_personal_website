@@ -20,7 +20,7 @@ replacing all the sample data with your own real data.
 4. The website assumes you're running on a Linux server with apache. I use the
  [mod_wsgi](https://github.com/GrahamDumpleton/mod_wsgi) apache module to
 deliver this content. 
-..* In `config/example.com.conf` I have an example apache
+..* In `config/example_apache_vhost.conf` I have an example apache
 virutal host config. I recommend creating a special user and group for this
  website to run as.
 ..* There is also a mandatory `config/wsgi.conf` you'll need to put in your
