@@ -20,7 +20,8 @@ WEB_ROOT = get_global_variable('web_root')
 logging.basicConfig(stream=sys.stderr, level=logging.INFO)
 logging.info("logging config loaded")
 # full path to HTML templates
-bottle.TEMPLATE_PATH.insert(0,'{0}/front_end/html_templates/'.format(WEB_ROOT)
+bottle.TEMPLATE_PATH.insert(0,
+                            '{0}/front_end/html_templates/'.format(WEB_ROOT)
 
 
 @route('/')
