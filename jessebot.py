@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # production jessebot.com web routing bottle file
 
 import logging
@@ -13,6 +14,7 @@ def get_global_variable(global_variable):
         doc = yaml.load(f)
     txt = doc["Globals"][global_variable]
     return txt
+
 
 # grab web root
 WEB_ROOT = get_global_variable('web_root')
