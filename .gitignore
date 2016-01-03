@@ -1,5 +1,4 @@
-terminal
-terminal/*
-option.tpl
 legacy/*
 legacy
+config/config.yaml
+config.yaml

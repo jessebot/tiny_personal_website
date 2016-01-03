@@ -1,0 +1,2 @@
+Globals:
+    web_root: 'PLACE ABSOLUTE PATH TO WEB ROOT HERE'
