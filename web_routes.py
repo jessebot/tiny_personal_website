@@ -39,15 +39,17 @@ def index():
     resume_pdf_download_URL = get_global_variable('resume_pdf_download')
     resume_docx_download_URL = get_global_variable('resume_docx_download')
     optional_panel = get_global_variable('optional_panel')
-    optional_panel_title = get_global_variable('optional_panel_title')
-    optional_panel_pic = get_global_variable('optional_panel_image')
-    optional_panel_button_text = get_global_variable('optional_panel_link_title')
-    optional_panel_button_URL = get_global_variable('optional_panel_URL')
-    return template('index', favicon=favicon, tab_title=tab_title,
-                    main_pic=main_pic, name=name, header_quotation=header_quotation,
+    optional_panel_title = get_global_variable('opt_panel_title')
+    optional_panel_pic = get_global_variable('opt_panel_image')
+    optional_panel_button_text = get_global_variable('opt_panel_button_text')
+    optional_panel_button_URL = get_global_variable('opt_panel_URL')
+    return template('index', favicon=favicon,
+                    browser_tab_title=browser_tab_title, main_pic=main_pic,
+                    name=name, header_quotation=header_quotation,
                     GitHub_URL=GitHub_URL, gdoc_URL=gdoc_URL,
                     resume_pdf_download_URL=resume_pdf_download_URL,
                     resume_docx_download_URL=resume_docx_download_URL,
+                    optional_panel=optional_panel,
                     optional_panel_title=optional_panel_title,
                     optional_panel_pic=optional_panel_pic,
                     optional_panel_button_text=optional_panel_button_text,

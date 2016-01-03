@@ -22,7 +22,7 @@ Globals:
     # Boolean, if set to True, will generate new panel with below info
     optional_panel: True
     # this could be social media, other conent, whatever suits you!
-    optional_panel_title: "Linux Newbie Class"
-    optional_panel_image: "penguin_copy.png"
-    optional_panel_link_title: "How To Unix/Linux"
-    optional_panel_URL: "http://howtonix.info/"
+    opt_panel_title: "Linux Newbie Class"
+    opt_panel_image: "penguin_copy.png"
+    opt_panel_button_text: "How To Unix/Linux"
+    opt_panel_URL: "http://howtonix.info/"
