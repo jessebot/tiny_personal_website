@@ -2,3 +2,4 @@ legacy/*
 legacy
 config/config.yaml
 config.yaml
+front_end/images/private/*
