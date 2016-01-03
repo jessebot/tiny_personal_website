@@ -19,8 +19,10 @@ Globals:
     # URL, or you can host a live copy at another URL
     resume_pdf_download: 'https://docs.google.com/document/d/blahpdfblahblahblah'
     resume_docx_download: 'https://docs.google.com/document/d/1t-xBYBxyUbDKUKQFIY1_r0GnjCMIUAyelfnyIhTK2Uc/export?format=docx&id=1t-xBYBxyUbDKUKQFIY1_r0GnjCMIUAyelfnyIhTK2Uc'
+    # Boolean, if set to True, will generate new panel with below info
+    optional_panel: True
     # this could be social media, other conent, whatever suits you!
-    extra_box_title: "Linux Newbie Class"
-    extra_box_image: "penguin_copy.png"
-    extra_box_link_title: "How To Unix/Linux"
-    extra_box_URL: "http://howtonix.info/"
+    optional_panel_title: "Linux Newbie Class"
+    optional_panel_image: "penguin_copy.png"
+    optional_panel_link_title: "How To Unix/Linux"
+    optional_panel_URL: "http://howtonix.info/"

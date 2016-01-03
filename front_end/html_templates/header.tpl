@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/x-icon" href="/images/favicon_jessebot.ico">
+    <link rel="icon" type="image/x-icon" href="/images/{{favicon}}">
 
-    <title>JesseBot.com</title>
+    <title>{{browser_tab_title}}</title>
 
     <!-- Custom styles for this template -->
     <link href="css/starter-template.css" rel="stylesheet">
@@ -20,7 +20,5 @@
   </head>
 
   <body>
-
     <div class="container">
-
       <div class="starter-template">

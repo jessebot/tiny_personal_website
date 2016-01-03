@@ -14,11 +14,11 @@
       <div class="panel-body">
     <div class="row featurette">
             <div class="col-md-5 tinyPad">
-              <img class="featurette-image img-responsive img-circle"  src="/images/defcon23.JPG">
+              <img class="featurette-image img-responsive img-circle"  src="/images/{{main_pic}}">
             </div>
             <div class="col-md-7">
-              <h2 class="featurette-heading"><br /><span class="text-muted">Hi, I'm</span> Jesse.</h2>
-              <p class="lead">I'm a DevOps Engineer that loves Linux, the internet, and Python.</p>
+              <h2 class="featurette-heading"><br /><span class="text-muted">Hi, I'm</span> {{name}}.</h2>
+              <p class="lead">{{header_quotation}}.</p>
             </div>
           </div>
     </div>
@@ -39,38 +39,40 @@
           <div class="col-md-6 morePad">
             <img src="/images/docs.png">
               <div class="btn-group">
-              <a href="https://docs.google.com/document/d/1t-xBYBxyUbDKUKQFIY1_r0GnjCMIUAyelfnyIhTK2Uc/edit?pli=1" class="btn btn-primary btn-lg">Resume</a>
+              <a href="{{gdoc_URL}}" class="btn btn-primary btn-lg">Resume</a>
               <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
                 <span class="caret"></span>
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="https://docs.google.com/document/d/1t-xBYBxyUbDKUKQFIY1_r0GnjCMIUAyelfnyIhTK2Uc/export?format=pdf&id=1t-xBYBxyUbDKUKQFIY1_r0GnjCMIUAyelfnyIhTK2Uc">Download .PDF</a></li>
+                <li><a href="{{resume_pdf_download_URL}}">Download .PDF</a></li>
                 <li class="divider"></li>
-                <li><a href="https://docs.google.com/document/d/1t-xBYBxyUbDKUKQFIY1_r0GnjCMIUAyelfnyIhTK2Uc/export?format=docx&id=1t-xBYBxyUbDKUKQFIY1_r0GnjCMIUAyelfnyIhTK2Uc">Download .Docx</a></li>
+                <li><a href="resume_docx_download_URL">Download .Docx</a></li>
               </ul>
               </div>
           </div>
           <div class="col-md-6">
-              <p><img src="/images/githubcat.png"><a href="http://github.com/jessebot" class="btn btn-primary btn-lg" role="button">GitHub</a></p>
+              <p><img src="/images/githubcat.png"><a href="{{GitHub_URL}}" class="btn btn-primary btn-lg" role="button">GitHub</a></p>
           </div>
       </div>
     </div>
     </div>
     </div>
- <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          Linux Newbie Class
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse">
-      <div class="panel-body">
-        <h2><p><img src="/images/penguin_copy.png">       <a href="http://howtonix.info" class="btn btn-primary btn-lg" role="button">How To *n?x</a></p></h2>
+% if optional_panel:
+       <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                {{optional_panel_title}}
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h2><p><img src="/images/{{optional_panel_pic}}">       <a href="{{optional_panel_button_URL}}" class="btn btn-primary btn-lg" role="button">{{optional_panel_button_text}}</a></p></h2>
+            </div>
+          </div>
+        </div> 
       </div>
-    </div>
-  </div> 
-</div>
+% end
 % include('footer.tpl')
