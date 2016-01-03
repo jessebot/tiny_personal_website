@@ -1,2 +1,26 @@
 Globals:
-    web_root: 'PLACE ABSOLUTE PATH TO WEB ROOT HERE'
+    # absolute path required
+    web_root: '/var/www/html'
+    # favicon, can take any image type
+    favicon: 'favicon.ico'
+    # domain name, or whatever you want the tab in the browser to say
+    website_title: 'example.com'
+    # the default image shown at the front of the page
+    profile_image: 'my_picture.JPG'
+    # Your name
+    profile_name: 'Jesse'
+    # Quote of any sort you'd like
+    profile_quote: "The internet is great."
+    # Full URL to your github
+    github_URL: 'https://github.com/jessebot'
+    # complete google doc sharing URL, assuming this is public
+    resume_google_doc: 'https://docs.google.com/document/d/blahblahblah'
+    # in your google doc, you can go to download as and right click copy that
+    # URL, or you can host a live copy at another URL
+    resume_pdf_download: 'https://docs.google.com/document/d/blahpdfblahblahblah'
+    resume_docx_download: 'https://docs.google.com/document/d/1t-xBYBxyUbDKUKQFIY1_r0GnjCMIUAyelfnyIhTK2Uc/export?format=docx&id=1t-xBYBxyUbDKUKQFIY1_r0GnjCMIUAyelfnyIhTK2Uc'
+    # this could be social media, other conent, whatever suits you!
+    extra_box_title: "Linux Newbie Class"
+    extra_box_image: "penguin_copy.png"
+    extra_box_link_title: "How To Unix/Linux"
+    extra_box_URL: "http://howtonix.info/"

@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# production jessebot.com web routing bottle file
+# production web routing bottle file
 
 import bottle
 from bottle import redirect, request, response, route
@@ -17,8 +17,10 @@ def get_global_variable(global_variable):
     return txt
 
 
-# grab web root
+# Grab site specific information
 WEB_ROOT = get_global_variable('web_root')
+TITLE = get_global_variable('web_title')
+
 # set logging
 logging.basicConfig(stream=sys.stderr, level=logging.INFO)
 logging.info("logging config loaded")
