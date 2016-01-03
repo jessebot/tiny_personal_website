@@ -2,23 +2,23 @@ Globals:
     # absolute path required
     web_root: '/var/www/html'
     # favicon, can take any image type
-    favicon: 'favicon.ico'
+    favicon: 'favicon_smile.gif'
     # domain name, or whatever you want the tab in the browser to say
     website_title: 'example.com'
     # the default image shown at the front of the page
-    profile_image: 'my_picture.JPG'
+    profile_image: 'my_picture.png'
     # Your name
-    profile_name: 'Jesse'
+    profile_name: 'Bob Smith'
     # Quote of any sort you'd like
-    profile_quote: "The internet is great."
+    profile_quote: "The internet is great. Please enjoy this sample webpage."
     # Full URL to your github
     github_URL: 'https://github.com/jessebot'
     # complete google doc sharing URL, assuming this is public
     resume_google_doc: 'https://docs.google.com/document/d/blahblahblah'
     # in your google doc, you can go to download as and right click copy that
     # URL, or you can host a live copy at another URL
-    resume_pdf_download: 'https://docs.google.com/document/d/blahpdfblahblahblah'
-    resume_docx_download: 'https://docs.google.com/document/d/1t-xBYBxyUbDKUKQFIY1_r0GnjCMIUAyelfnyIhTK2Uc/export?format=docx&id=1t-xBYBxyUbDKUKQFIY1_r0GnjCMIUAyelfnyIhTK2Uc'
+    resume_pdf_download: 'https://docs.google.com/document/d/blahblahblah/export?format=pdf'
+    resume_docx_download: 'https://docs.google.com/document/d/blahblahblah/export?format=docx'
     # Boolean, if set to True, will generate new panel with below info
     optional_panel: True
     # this could be social media, other conent, whatever suits you!
