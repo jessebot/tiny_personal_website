@@ -1,9 +1,10 @@
 #!/usr/bin/python
 # production jessebot.com web routing bottle file
 
-import logging
+import bottle
 from bottle import redirect, request, response, route
 from bottle import run, static_file, template
+import logging
 import sys
 import yaml
 
