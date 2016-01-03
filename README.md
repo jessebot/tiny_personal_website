@@ -1,8 +1,10 @@
 bootstrap_bottle
 ================
 
-Keeping track of "best practices": things that work with bottle (Python webframework) and bootstrap (Twitter's frontend).
+Basic bottle driven website with a bootstrap frontend.
 
-The website is located at http://jessebot.com.
+Configuration stored in confg/config.yaml.sample
+
+The website is located at http://jessebot.com
 
 The socket file (CentOS/RHEL) is in /var/run.
