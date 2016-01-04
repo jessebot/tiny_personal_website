@@ -1,5 +1,7 @@
 #!/usr/bin/python
-# production web routing bottle file
+# Code by JesseBot@Linux.com
+# 1/3/16
+# Production web routing bottle file
 
 import bottle
 from bottle import redirect, request, response, route
