@@ -86,10 +86,15 @@
           </div>
           <div id="collapseThree" class="panel-collapse collapse">
             <div class="panel-body">
-              <h2><p><img src="/images/{{optional_panel_pic}}">       <a href="{{optional_panel_button_URL}}" class="btn btn-primary btn-lg" role="button">{{optional_panel_button_text}}</a></p></h2>
+              <h2>
+                <p>
+                  <img src="/images/{{optional_panel_pic}}">
+                  <a target="_blank" href="{{optional_panel_button_URL}}" class="btn btn-primary btn-lg" role="button">{{optional_panel_button_text}}</a>
+                </p>
+              </h2>
             </div>
           </div>
-        </div> 
+       </div> 
       </div>
 % end
 % include('footer.tpl')
