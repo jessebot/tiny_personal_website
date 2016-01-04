@@ -17,7 +17,11 @@
               <img class="featurette-image img-responsive img-circle"  src="/images/{{main_pic}}">
             </div>
             <div class="col-sm-6 col-md-7 featureTextPad">
-              <h2 class="featurette-heading"><span class="text-muted">Hi, I'm</span> {{name}}.</h2>
+            % if len(name) > 13:
+                  <h3 class="featurette-heading"><span class="text-muted">Hi, I'm</span> {{name}}.</h3>
+            % else:
+                  <h2 class="featurette-heading"><span class="text-muted">Hi, I'm</span> {{name}}.</h2>
+            % end 
               <p class="lead">{{header_quotation}}</p>
             </div>
           </div>
