@@ -13,11 +13,11 @@
     <div id="collapseOne" class="panel-collapse collapse in">
       <div class="panel-body">
     <div class="row featurette">
-            <div class="col-md-5 tinyPad">
+            <div class="col-sm-6 col-md-5 featureImagePad">
               <img class="featurette-image img-responsive img-circle"  src="/images/{{main_pic}}">
             </div>
-            <div class="col-md-7">
-              <h2 class="featurette-heading"><br /><span class="text-muted">Hi, I'm</span> {{name}}.</h2>
+            <div class="col-sm-6 col-md-7 featureTextPad">
+              <h2 class="featurette-heading"><span class="text-muted">Hi, I'm</span> {{name}}.</h2>
               <p class="lead">{{header_quotation}}</p>
             </div>
           </div>
@@ -36,28 +36,36 @@
     <div id="collapseTwo" class="panel-collapse collapse">
       <div class="panel-body">
         <div class="row padMe">
-          <div class="col-xs-12 col-md-3 imageLower">
-            <img src="/images/docs.png">
-          </div>
-          <div class="col-xs-12 col-md-3 buttonLower">
-            <div class="btn-group">
-              <a href="{{gdoc_URL}}" class="col-xs-9 col-md-9 btn btn-primary btn-lg" role="button">Resume</a>
-              <button type="button" class="col-xs-3 col-md-3 btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
-                <span class="caret"></span>
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="{{resume_pdf_download_URL}}">Download .PDF</a></li>
-                <li class="divider"></li>
-                <li><a href="{{resume_docx_download_URL}}">Download .Docx</a></li>
-              </ul>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 imageLower">
+                <img src="/images/docs.png">
+              </div>
+              <div class="col-xs-12 col-sm-5 col-md-6 buttonLower">
+                <div class="btn-group">
+                  <a href="{{gdoc_URL}}" class="col-xs-9 col-sm-9 col-md-9 btn btn-primary btn-lg" role="button">Resume</a>
+                  <button type="button" class="col-xs-3 col-sm-3 col-md-3 btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="{{resume_pdf_download_URL}}">Download .PDF</a></li>
+                    <li class="divider"></li>
+                    <li><a href="{{resume_docx_download_URL}}">Download .Docx</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-3">
-            <img src="/images/githubcat.png">
-          </div>
-          <div class="col-xs-12 col-md-3 buttonLower">
-            <a href="{{GitHub_URL}}" class="btn btn-primary btn-lg" role="button">GitHub</a>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 imageLower">
+                <img src="/images/githubcat.png">
+              </div>
+              <div class="col-xs-12 col-sm-6 col-sm-5 col-md-6 buttonLower">
+                <a href="{{GitHub_URL}}" class="btn btn-primary btn-lg" role="button">GitHub</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
