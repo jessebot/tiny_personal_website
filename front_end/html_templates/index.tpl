@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-7">
               <h2 class="featurette-heading"><br /><span class="text-muted">Hi, I'm</span> {{name}}.</h2>
-              <p class="lead">{{header_quotation}}</p>
+              <p class="lead">{{header_quotation}}.</p>
             </div>
           </div>
     </div>
@@ -36,11 +36,13 @@
     <div id="collapseTwo" class="panel-collapse collapse">
       <div class="panel-body">
         <div class="row padMe">
-          <div class="col-md-6 morePad">
+          <div class="col-xs-12 col-md-3 imageLower">
             <img src="/images/docs.png">
-              <div class="btn-group">
-              <a href="{{gdoc_URL}}" class="btn btn-primary btn-lg">Resume</a>
-              <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
+          </div>
+          <div class="col-xs-12 col-md-3 buttonLower">
+            <div class="btn-group">
+              <a href="{{gdoc_URL}}" class="col-xs-9 col-md-9 btn btn-primary btn-lg" role="button">Resume</a>
+              <button type="button" class="col-xs-3 col-md-3 btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
                 <span class="caret"></span>
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
@@ -49,15 +51,18 @@
                 <li class="divider"></li>
                 <li><a href="{{resume_docx_download_URL}}">Download .Docx</a></li>
               </ul>
-              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-              <p><img src="/images/githubcat.png"><a href="{{GitHub_URL}}" class="btn btn-primary btn-lg" role="button">GitHub</a></p>
+          <div class="col-xs-12 col-md-3">
+            <img src="/images/githubcat.png">
           </div>
+          <div class="col-xs-12 col-md-3 buttonLower">
+            <a href="{{GitHub_URL}}" class="btn btn-primary btn-lg" role="button">GitHub</a>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-    </div>
+  </div>
 % if optional_panel:
        <div class="panel panel-default">
           <div class="panel-heading">
