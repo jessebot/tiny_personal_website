@@ -19,6 +19,8 @@ Globals:
     # URL, or you can host a live copy at another URL
     resume_pdf_download: 'https://docs.google.com/document/d/blahblahblah/export?format=pdf'
     resume_docx_download: 'https://docs.google.com/document/d/blahblahblah/export?format=docx'
+    # setting to false will remove fork me corner banner
+    fork_me: True
     # Boolean, if set to True, will generate new panel with below info
     optional_panel: True
     # this could be social media, other conent, whatever suits you!
