@@ -47,7 +47,7 @@
               </div>
               <div class="col-xs-12 col-sm-5 col-md-6 buttonLower">
                 <div class="btn-group">
-                  <a href="{{gdoc_URL}}" class="col-xs-9 col-sm-9 col-md-9 btn btn-primary btn-lg" role="button">Resume</a>
+                  <a target="_blank" href="{{gdoc_URL}}" class="col-xs-9 col-sm-9 col-md-9 btn btn-primary btn-lg" role="button" data-toggle="tooltip" data-placement="bottom" title="Go to Google doc, or download directly">Resume</a>
                   <button type="button" class="col-xs-3 col-sm-3 col-md-3 btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
                     <span class="caret"></span>
                     <span class="sr-only">Toggle Dropdown</span>
@@ -67,7 +67,7 @@
                 <img src="/images/githubcat.png">
               </div>
               <div class="col-xs-12 col-sm-6 col-sm-5 col-md-6 buttonLower">
-                <a href="{{GitHub_URL}}" class="btn btn-primary btn-lg" role="button">GitHub</a>
+                <a target="_blank" href="{{GitHub_URL}}" class="btn btn-primary btn-lg" role="button" data-toggle="tooltip" data-placement="bottom" title="Check out my GitHub">GitHub</a>
               </div>
             </div>
           </div>
