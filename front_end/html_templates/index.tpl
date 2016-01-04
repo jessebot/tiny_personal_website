@@ -12,8 +12,8 @@
     </div>
     <div id="collapseOne" class="panel-collapse collapse in">
       <div class="panel-body">
-    <div class="row featurette">
-            <div class="col-sm-6 col-md-5 featureImagePad">
+    <div class="row featurette featureImagePad">
+            <div class="col-sm-6 col-md-5">
               <img class="featurette-image img-responsive img-circle"  src="/images/{{main_pic}}">
             </div>
             <div class="col-sm-6 col-md-7 featureTextPad">
