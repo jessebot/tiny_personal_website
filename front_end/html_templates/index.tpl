@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-7">
               <h2 class="featurette-heading"><br /><span class="text-muted">Hi, I'm</span> {{name}}.</h2>
-              <p class="lead">{{header_quotation}}.</p>
+              <p class="lead">{{header_quotation}}</p>
             </div>
           </div>
     </div>
