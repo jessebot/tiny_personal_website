@@ -40,6 +40,7 @@ def index():
     gdoc_URL = get_global_variable('resume_google_doc')
     resume_pdf_download_URL = get_global_variable('resume_pdf_download')
     resume_docx_download_URL = get_global_variable('resume_docx_download')
+    fork_me = get_global_variable('fork_me')
     optional_panel = get_global_variable('optional_panel')
     optional_panel_title = get_global_variable('opt_panel_title')
     optional_panel_pic = get_global_variable('opt_panel_image')
@@ -51,7 +52,7 @@ def index():
                     GitHub_URL=GitHub_URL, gdoc_URL=gdoc_URL,
                     resume_pdf_download_URL=resume_pdf_download_URL,
                     resume_docx_download_URL=resume_docx_download_URL,
-                    optional_panel=optional_panel,
+                    fork_me=fork_me, optional_panel=optional_panel,
                     optional_panel_title=optional_panel_title,
                     optional_panel_pic=optional_panel_pic,
                     optional_panel_button_text=optional_panel_button_text,
