@@ -1,18 +1,15 @@
-.padMe {
-  padding: 0px 80px 0px 80px;
-}
-
-.col-md-5.tinyPad {
-  padding-left: 50px;
-}
-
 @media (min-width: 992px) {
+    .tinyPad {
+      padding-left: 50px;
+    }
     .buttonLower {
       padding-top: 50px;
     }
-
     .imageLower {
       padding-top: 11px;
+    }
+    .padMe {
+      padding: 0px 80px 0px 80px;
     }
 }
 
