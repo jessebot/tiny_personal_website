@@ -63,7 +63,7 @@
           </div>
           <div class="col-md-6">
             <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-6 imageLower">
+              <div class="col-xs-12 col-sm-6 col-md-6">
                 <img src="/images/githubcat.png">
               </div>
               <div class="col-xs-12 col-sm-6 col-sm-5 col-md-6 buttonLower">
