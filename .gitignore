@@ -1,5 +1,9 @@
-terminal
-terminal/*
-option.tpl
 legacy/*
 legacy
+.config/config.yaml
+.config.yaml
+front_end/images/private/*
+front_end/images/swag.gif
+front_end/images/currentjesse.jpg
+front_end/images/favicon_jessebot.ico
+front_end/html_templates/hate.tpl
