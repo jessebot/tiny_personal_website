@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # Code by JesseBot@Linux.com
-# 1/3/16
+# 2/11/16
 # Production web routing bottle file
 
 import bottle
@@ -13,7 +13,7 @@ import yaml
 
 def get_global_variable(global_variable):
     """ gets global variable given string variable name"""
-    with open('./config/config.yaml', 'r') as f:
+    with open('./.config/config.yaml', 'r') as f:
         doc = yaml.load(f)
     txt = doc["Globals"][global_variable]
     return txt
