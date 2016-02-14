@@ -42,7 +42,7 @@ def index():
     resume_docx_download_URL = get_global_variable('resume_docx_download')
     try:
         fork_me = get_global_variable('fork_me')
-    else:
+    except:
         fork_me = None
     optional_panel = get_global_variable('optional_panel')
     optional_panel_title = get_global_variable('opt_panel_title')
