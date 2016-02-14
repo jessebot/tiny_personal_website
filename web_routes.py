@@ -40,7 +40,10 @@ def index():
     gdoc_URL = get_global_variable('resume_google_doc')
     resume_pdf_download_URL = get_global_variable('resume_pdf_download')
     resume_docx_download_URL = get_global_variable('resume_docx_download')
-    fork_me = get_global_variable('fork_me')
+    try:
+        fork_me = get_global_variable('fork_me')
+    else:
+        fork_me = None
     optional_panel = get_global_variable('optional_panel')
     optional_panel_title = get_global_variable('opt_panel_title')
     optional_panel_pic = get_global_variable('opt_panel_image')
