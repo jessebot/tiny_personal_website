@@ -22,7 +22,12 @@
             % else:
                   <h2 class="featurette-heading"><span class="text-muted">Hi, I'm</span> {{name}}.</h2>
             % end 
-              <p class="lead">{{header_quotation}}</p>
+              <p class="lead special-font"><small>{{header_quotation}}</small></p>
+            % if len(name) > 13:
+              <h5><small>{{blurb}}</small></h5>
+            % else:
+              <h4><small>{{blurb}}</small></h4>
+            % end 
             </div>
           </div>
     </div>
