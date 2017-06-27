@@ -34,5 +34,5 @@ virutal host config. I recommend creating a special user and group for this
 Sample Site
 -----------
 
-The website this is based off of is http://jessebot.com
+The website this is based off of is https://jessebot.io
 
