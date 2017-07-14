@@ -1,4 +1,5 @@
 /**********BASE CONFIGURATIONS**********/   
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono|Source+Sans+Pro");
 
 body {
 	background-color: #1f1f1f;
@@ -34,11 +35,12 @@ h5 {
     padding: 40px 45px 0px 20px;
 }
 
-
 .nav-tabs .nav-link.active {
     background-image: url(../images/sep-half.png);
     background-color: #3d3d3d;
 	color: #33cccc;
+    border: 1px solid #383737;
+    border-bottom-color: #3d3d3d;
 }
 
 .card {
@@ -49,17 +51,22 @@ h5 {
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 
+/*
 .card :hover {
     background-color: #4f4f4f;
     -moz-box-shadow: 3px 3px 2px 0px #151515;
     -webkit-box-shadow: 3px 3px 2px 0px #151515;
     box-shadow: 3px 3px 2px 0px #151515;
-}
+}*/
 
-.card-header {
+.card-header, .card-footer {
     border: 1px solid #383737;
     background-image: url(../images/sep-half.png);
     background-color: #4f4f4f;
+    border-bottom-color: #3d3d3d;
+}
+
+.card-block {
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 

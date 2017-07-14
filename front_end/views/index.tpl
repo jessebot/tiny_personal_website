@@ -1,6 +1,6 @@
 % include('header.tpl')
 <div class="container">
-  <div class="card mx-auto" style="width: 25rem; margin-top: 50px;">
+  <div class="card mx-auto" style="width: 25rem;">
     <img class="card-img-top img-fluid" src="/images/{{main_pic}}" alt="What I look like.">
     <div class="card-header">
       <ul class="nav nav-tabs card-header-tabs">
@@ -18,7 +18,8 @@
     <div class="card-block">
       <h4 class="card-title"><span class="text-muted">Hi, I'm</span> {{name}}.</h4>
       <p class="card-text">
-        <p class="lead special-font"><small>{{header_quotation}}</small></p>
+        <div style="font-family: 'Cutive Mono';">{{header_quotation}}</div>
+        <br />
         <h5><small>{{blurb}}</small></h5>
       </p>
     </div> <!-- card block -->
