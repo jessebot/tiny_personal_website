@@ -1,9 +1,12 @@
 % include('header.tpl')
-<div class="container">
+<div class="container align-self-center">
 <div class="row justify-content-center">
-<div class="col-xl-8 col-lg-9 col-md-11 col-sm-12 align-self-center">
-  <div class="card mx-auto">
+<div class="col-xl-8 col-lg-9 col-md-11 col-sm-12">
+  <div class="card mx-auto" style="width: 450px;">
     <img class="img-fluid" src="/images/{{main_pic}}"  alt="What I look like.">
+      <div class="card-img-overlay">
+        <div style="font-family: 'Cutive Mono';">{{header_quotation}}</div>
+    </div>
     <div class="card-header">
       <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
@@ -28,9 +31,7 @@
     <div class="card-block">
       <h4 class="card-title"><span class="text-muted">Hi, I'm</span> {{name}}.</h4>
       <p class="card-text">
-        <div style="font-family: 'Cutive Mono';">{{header_quotation}}</div>
-        <br />
-        <h5><small>{{blurb}}</small></h5>
+        {{blurb}}
       </p>
     </div> <!-- card block -->
     <div class="card-footer">

@@ -49,13 +49,14 @@ h5 {
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 
-/*
-.card :hover {
-    background-color: #4f4f4f;
-    -moz-box-shadow: 3px 3px 2px 0px #151515;
-    -webkit-box-shadow: 3px 3px 2px 0px #151515;
-    box-shadow: 3px 3px 2px 0px #151515;
-}*/
+.card-img-overlay {
+    background-color:rgba(0, 0, 0, 0.6);
+    width: 448px;
+    height: 78px;
+    font-size: small;
+    color: #33cccc;
+    padding: .5rem;
+}
 
 .card-header, .card-footer {
     border: 1px solid #383737;
@@ -66,6 +67,10 @@ h5 {
 
 .card-block {
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.card-text {
+	font-weight: lighter;
 }
 
 .dropdown-toggle {
@@ -91,6 +96,11 @@ h5 {
     font-size: small;
 }
 
+.col-6 {
+    text-align: center;
+}
+
+
 @media (min-width: 576px) {
     .container {
       padding: 40px 10px 20px 10px;
@@ -113,8 +123,4 @@ h5 {
     .container {
       padding: 40px 50px 0px 50px;
     }
-}
-
-.col-6 {
-    text-align: center;
 }
