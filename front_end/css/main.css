@@ -1,0 +1,79 @@
+/**********BASE CONFIGURATIONS**********/   
+
+body {
+	background-color: #1f1f1f;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 46px;
+}
+
+h3, h5, a {
+	color: #33cccc;
+}
+
+h3, h4, h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+}
+
+h5 {
+	margin-left:5px;
+}
+
+.container {
+    padding: 40px 45px 0px 20px;
+}
+
+
+.nav-tabs .nav-link.active {
+    background-image: url(../images/sep-half.png);
+    background-color: #3d3d3d;
+	color: #33cccc;
+}
+
+.card {
+    border: 1px solid #383737;
+    background-image: url(../images/sep-half.png);
+    background-color: #3d3d3d;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.card :hover {
+    background-color: #4f4f4f;
+    -moz-box-shadow: 3px 3px 2px 0px #151515;
+    -webkit-box-shadow: 3px 3px 2px 0px #151515;
+    box-shadow: 3px 3px 2px 0px #151515;
+}
+
+.card-header {
+    border: 1px solid #383737;
+    background-image: url(../images/sep-half.png);
+    background-color: #4f4f4f;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+/**********SIZE SPECIFIC CONFIGURATIONS*********
+
+@media (min-width: 768px) {
+    .container {
+      padding: 40px 45px 0px 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+      padding: 40px 25px 0px 0px;
+    }
+}
+********SIZE SPECIFIC CONFIGURATIONS**********/

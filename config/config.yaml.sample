@@ -13,6 +13,8 @@ Globals:
     profile_quote: "The internet is great. Please enjoy this sample webpage."
     # Full URL to your github
     github_URL: 'https://github.com/jessebot'
+    # Full URL to your linkedin public profile
+    linkedin_URL: 'https://www.linkedin.com/in/jesse-hitch-8b5b023a/'
     # complete google doc sharing URL, assuming this is public
     resume_google_doc: 'https://docs.google.com/document/d/blahblahblah'
     # in your google doc, you can go to download as and right click copy that

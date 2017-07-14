@@ -27,7 +27,7 @@ log.info("logging config loaded")
 WEB_ROOT = get_global_variable('web_root')
 # full path to HTML templates
 bottle.TEMPLATE_PATH.insert(0,
-                            '{0}/front_end/html_templates/'.format(WEB_ROOT))
+                            '{0}/front_end/views/'.format(WEB_ROOT))
 
 
 @route('/')
@@ -38,7 +38,8 @@ def index():
     name = get_global_variable('profile_name')
     header_quotation = get_global_variable('profile_quote')
     blurb = get_global_variable('profile_blurb')
-    GitHub_URL = get_global_variable('github_URL')
+    github_URL = get_global_variable('github_URL')
+    linkedin_URL = get_global_variable('linkedin_URL')
     gdoc_URL = get_global_variable('resume_google_doc')
     resume_pdf_download_URL = get_global_variable('resume_pdf_download')
     resume_docx_download_URL = get_global_variable('resume_docx_download')
@@ -54,7 +55,8 @@ def index():
     return template('index', favicon=favicon,
                     browser_tab_title=browser_tab_title, main_pic=main_pic,
                     name=name, header_quotation=header_quotation,
-                    GitHub_URL=GitHub_URL, gdoc_URL=gdoc_URL,
+                    github_URL=github_URL, linkedin_URL=linkedin_URL,
+                    gdoc_URL=gdoc_URL,
                     resume_pdf_download_URL=resume_pdf_download_URL,
                     resume_docx_download_URL=resume_docx_download_URL,
                     fork_me=fork_me, optional_panel=optional_panel,
@@ -81,3 +83,13 @@ def css(filename):
 @route('/fonts/<filename>')
 def fonts(filename):
     return static_file(filename, root='{0}/front_end/fonts'.format(WEB_ROOT))
+
+@route('/love')
+def love():
+    favicon = get_global_variable('favicon')
+    return template('love', favicon=favicon)
+
+@route('/hate')
+def hate():
+    favicon = get_global_variable('favicon')
+    return template('hate', favicon=favicon)
