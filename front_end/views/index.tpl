@@ -1,5 +1,7 @@
 % include('header.tpl')
 <div class="container">
+<div class="row justify-content-center">
+<div class="col-8">
   <div class="card mx-auto">
     <img class="img-fluid" src="/images/{{main_pic}}"  alt="What I look like.">
     <div class="card-header">
@@ -32,7 +34,7 @@
       </p>
     </div> <!-- card block -->
     <div class="card-footer">
-      <div class="row justify-content-between mx-auto">
+      <div class="row justify-content-between">
         <div class="col-6">
           <a target="_blank" href="{{github_URL}}"  role="button" data-toggle="tooltip" data-placement="bottom" title="Check out my GitHub">
             <img src="/images/github-cat.svg" class="img-fluid" style="height: 48px";>
@@ -46,5 +48,7 @@
         </div> <!-- row -->
     </div> <!-- card footer -->
   </div> <!-- card -->
+</div> <!-- col -->
+</div> <!-- row -->
 
 % include('footer.tpl')

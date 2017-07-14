@@ -33,10 +33,6 @@ h5 {
 	margin-left:5px;
 }
 
-.container {
-    padding: 70px 300px 40px 300px;
-}
-
 .nav-tabs .nav-link.active {
     background-image: url(../images/sep-half.png);
     background-color: #3d3d3d;
@@ -95,17 +91,18 @@ h5 {
     font-size: small;
 }
 
-/**********SIZE SPECIFIC CONFIGURATIONS*********
-
 @media (min-width: 768px) {
     .container {
-      padding: 40px 45px 0px 20px;
+      padding: 40px 0px 20px 0px;
     }
 }
 
 @media (min-width: 992px) {
     .container {
-      padding: 40px 25px 0px 0px;
+      padding: 40px 50px 0px 50px;
     }
 }
-********SIZE SPECIFIC CONFIGURATIONS**********/
+
+.col-6 {
+    text-align: center;
+}
