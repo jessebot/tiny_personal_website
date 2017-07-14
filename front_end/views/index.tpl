@@ -1,7 +1,7 @@
 % include('header.tpl')
 <div class="container">
-  <div class="card mx-auto" style="width: 30rem;">
-    <img class="card-img-top img-fluid" src="/images/{{main_pic}}"  alt="What I look like.">
+  <div class="card mx-auto">
+    <img class="img-fluid" src="/images/{{main_pic}}"  alt="What I look like.">
     <div class="card-header">
       <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
@@ -14,8 +14,7 @@
               Resume
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <h6 class="dropdown-header">Live Doc</h6>
-              <a class="menu-drop-item" target="_blank" href="{{gdoc_URL}}"  role="button" data-toggle="tooltip" data-placement="bottom" title="Go to Google doc, or download directly">gdoc</a>
+              <a class="menu-drop-item" target="_blank" href="{{gdoc_URL}}"  role="button" data-toggle="tooltip" data-placement="bottom" title="Go to Google doc, or download directly">Live Doc</a>
             <h6 class="dropdown-header">Direct Downloads</h6>
               <a class="menu-drop-item" href="{{resume_pdf_download_URL}}">Download .PDF</a>
               <a class="menu-drop-item" href="{{resume_docx_download_URL}}">Download .Docx</a>
@@ -33,13 +32,13 @@
       </p>
     </div> <!-- card block -->
     <div class="card-footer">
-      <div class="row justify-content-center">
-        <div class="col">
+      <div class="row justify-content-between mx-auto">
+        <div class="col-6">
           <a target="_blank" href="{{github_URL}}"  role="button" data-toggle="tooltip" data-placement="bottom" title="Check out my GitHub">
             <img src="/images/github-cat.svg" class="img-fluid" style="height: 48px";>
           </a>
         </div> <!-- col -->
-        <div class="col">
+        <div class="col-6">
           <a target="_blank" href="{{linkedin_URL}}"  role="button" data-toggle="tooltip" data-placement="bottom" title="Connect with me on Linkedin">
             <img src="/images/linkedin.svg" class="img-fluid" style="height: 48px";>
           </a>
