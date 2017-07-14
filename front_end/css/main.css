@@ -86,6 +86,13 @@ h5 {
 	font-weight: lighter;
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
     width: 135px;
+    margin-left: -1px;
+    border-color: #383737;
+    border-top-style: dashed;
+}
+.menu-drop-item {
+    padding: 1rem 1.6rem;
+    font-size: small;
 }
 
 /**********SIZE SPECIFIC CONFIGURATIONS*********
