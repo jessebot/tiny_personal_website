@@ -20,6 +20,8 @@ h3 {
 
 h3, h5, a {
 	color: #33cccc;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
 }
 
 h3, h4, h5 {
@@ -68,6 +70,22 @@ h5 {
 
 .card-block {
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.dropdown-toggle {
+    padding-top: 5px;
+    background-image: url(../images/sep-half.png);
+    background-color: #4f4f4f;
+	color: #33cccc;
+}
+.dropdown-menu {
+    background-image: url(../images/sep-half.png);
+    background-color: #4f4f4f;
+	color: #33cccc;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    width: 135px;
 }
 
 /**********SIZE SPECIFIC CONFIGURATIONS*********
