@@ -5,6 +5,12 @@ This is a Python based CMS for a small personal website. The back end uses
 the bottle web framework and the front end is bootstrap. YAML is used for site
  specific configurations. Tested with Python 2.7 only.
 
+Under the Hood
+--------------
+Bootstrap v4
+Bottle
+Google Fonts
+The Open Source Community <3
 
 Setup
 -----
@@ -28,11 +34,11 @@ virutal host config. I recommend creating a special user and group for this
  you are running CentOS/RHEL, which will live in `/var/run/http`.
 
 5. All changes to HTML, CSS, JS, Python, or your core YAML will require an
- apache restart.
+ apache restart - with this specific configuration for the web server portion.
 
 
 Sample Site
 -----------
 
-The website this is based off of is https://jessebot.io
+A demo lives at my personal resume site: https://jessebot.io
 
