@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Resume website for {{name}}">
+    <meta name="author" content="Jesse Hitch">
+    <meta name="theme-color" content="#1f1f1f" />
     <link rel="icon" type="image/x-icon" href="/images/{{favicon}}">
+
+    <meta property="og:image" content="/images/{{main_pic}}">
+    <meta property="og:title" content="{{browser_tab_title}}">
+    <meta property="og:description" content="Resume website for {{name}}">
+    <meta property="og:type" content="profile">
 
     <title>{{browser_tab_title}}</title>
 
