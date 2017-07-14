@@ -1,7 +1,7 @@
 % include('header.tpl')
 <div class="container">
 <div class="row justify-content-center">
-<div class="col-8">
+<div class="col-xl-8 col-lg-9 col-md-11 col-sm-12 align-self-center">
   <div class="card mx-auto">
     <img class="img-fluid" src="/images/{{main_pic}}"  alt="What I look like.">
     <div class="card-header">
