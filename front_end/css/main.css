@@ -58,6 +58,12 @@ h5 {
     padding: .5rem;
 }
 
+.top-desc {
+    color: #33cccc;
+    margin-left: -70px;
+    margin-top: 2px;
+}
+
 .card-header, .card-footer {
     border: 1px solid #383737;
     background-image: url(../images/sep-half.png);
