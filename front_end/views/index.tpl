@@ -41,7 +41,7 @@
         <li class="nav-item">
           <div class="dropdown">
             <button class="dropdown-toggle border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="/images/docs.png" class="img-fluid" style="height: 32px;">
+            <img src="/images/googledocs.svg" class="img-fluid" style="height: 32px;">
               Resume
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -64,12 +64,12 @@
       <div class="row justify-content-between">
         <div class="col-6">
           <a target="_blank" href="{{github_URL}}"  role="button" data-toggle="tooltip" data-placement="bottom" title="Check out my GitHub">
-            <img src="/images/github-cat.svg" class="img-fluid" style="height: 48px";>
+            <img src="/images/github-cat.svg" class="img-fluid" style="height: 32px";>
           </a>
         </div> <!-- col -->
         <div class="col-6">
           <a target="_blank" href="{{linkedin_URL}}"  role="button" data-toggle="tooltip" data-placement="bottom" title="Connect with me on Linkedin">
-            <img src="/images/linkedin.svg" class="img-fluid" style="height: 48px";>
+            <img src="/images/linkedin.svg" class="img-fluid" style="height: 32px";>
           </a>
         </div> <!-- col -->
         </div> <!-- row -->
