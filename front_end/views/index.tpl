@@ -5,7 +5,11 @@
   <div class="card mx-auto" style="width: 450px;">
     <img class="img-fluid" src="/images/{{main_pic}}"  alt="What I look like.">
       <div class="card-img-overlay">
-        <div style="font-family: 'Cutive Mono';">{{header_quotation}}</div>
+        <div style="font-family: 'Cutive Mono';">
+          {{name}} = {'occupation': '{{occupation}}',
+          <p>'primary_skills': {{skills}},</p>
+          <p>'likes': {{likes}}}</p>
+        </div>
     </div>
     <div class="card-header">
       <ul class="nav nav-tabs card-header-tabs">
