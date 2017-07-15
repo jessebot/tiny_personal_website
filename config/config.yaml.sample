@@ -9,8 +9,12 @@ Globals:
     profile_image: 'my_picture.png'
     # Your name
     profile_name: 'Bob Smith'
-    # Quote of any sort you'd like
-    profile_quote: "The internet is great. Please enjoy this sample webpage."
+    # Job Title
+    occupation: 'professional basket weaver'
+    # Skills - what you're good at.
+    skills: ['cooking','web design']
+    # things you like
+    likes: ['videogames','analogies','silly hair']
     # Full URL to your github
     github_URL: 'https://github.com/jessebot'
     # Full URL to your linkedin public profile
