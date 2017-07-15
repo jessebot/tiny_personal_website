@@ -2,13 +2,35 @@
 <div class="container align-self-center">
 <div class="row justify-content-center">
 <div class="col-xl-8 col-lg-9 col-md-11 col-sm-12">
-  <div class="card mx-auto" style="width: 450px;">
+  <div class="card mx-auto" style="width: 475px;">
     <img class="img-fluid" src="/images/{{main_pic}}"  alt="What I look like.">
       <div class="card-img-overlay">
         <pre class="top-desc">
           {{name.upper()}} = {'occupation': '{{occupation}}',
-                   'primary_skills': {{skills}},
-                   'likes': {{likes}}}
+          % final_item = len(skills) - 1
+          % for i, skill in enumerate(skills):
+          %     if i == 0:   
+                   'skills': ['{{skill}}',
+          %     end
+          %     if i == final_item:
+                              '{{skill}}'],
+          %     end
+          %     if i != final_item and i != 0:
+                              '{{skill}}',
+          %     end
+          % end
+          % final_item = len(likes) - 1
+          % for i, like in enumerate(likes):
+          %     if i == 0:   
+                   'likes': ['{{like}}',
+          %     end
+          %     if i == final_item:
+                             '{{like}}']}
+          %     end
+          %     if i != final_item and i != 0:
+                             '{{like}}',
+          %     end
+          % end
         </pre>
     </div>
     <div class="card-header">
