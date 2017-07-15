@@ -54,14 +54,12 @@ def index():
     optional_panel_pic = get_global_variable('opt_panel_image')
     optional_panel_button_text = get_global_variable('opt_panel_button_text')
     optional_panel_button_URL = get_global_variable('opt_panel_URL')
-    return template('index', favicon=favicon,
+    return template('index', favicon=favicon, optional_panel=optional_panel,
                     browser_tab_title=browser_tab_title, main_pic=main_pic,
-                    name=name, header_quotation=header_quotation,
+                    name=name, gdoc_URL=gdoc_URL, fork_me=fork_me, 
                     github_URL=github_URL, linkedin_URL=linkedin_URL,
-                    gdoc_URL=gdoc_URL,
                     resume_pdf_download_URL=resume_pdf_download_URL,
                     resume_docx_download_URL=resume_docx_download_URL,
-                    fork_me=fork_me, optional_panel=optional_panel,
                     optional_panel_title=optional_panel_title,
                     optional_panel_pic=optional_panel_pic, blurb=blurb,
                     optional_panel_button_text=optional_panel_button_text,
