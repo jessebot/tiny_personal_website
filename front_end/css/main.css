@@ -34,14 +34,7 @@ h5 {
 	margin-left:5px;
 }
 
-.nav-tabs .nav-link.active {
-    background-image: url(../images/sep-half.png);
-    background-color: #3d3d3d;
-	color: #29abe2;
-    border: 1px solid #383737;
-    border-bottom-color: #3d3d3d;
-}
-
+/**********card and nav**********/   
 .card {
     border: 1px solid #383737;
     background-image: url(../images/sep-half.png);
@@ -64,29 +57,31 @@ h5 {
     right: 0px;
     box-shadow: 2px 2px 4px 0px rgba(21, 21, 21, 0.75);
 }
-
 .top-desc {
     color: #fff;
     margin-left: -59px;
     margin-top: 9px;
     opacity: .7;
 }
-
 .card-header, .card-footer {
     border: 1px solid #383737;
     background-image: url(../images/sep-half.png);
     background-color: #4f4f4f;
     border-bottom-color: #3d3d3d;
 }
-
 .card-block {
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
-
 .card-text {
 	font-weight: lighter;
 }
-
+.nav-tabs .nav-link.active {
+    background-image: url(../images/sep-half.png);
+    background-color: #3d3d3d;
+	color: #29abe2;
+    border: 1px solid #383737;
+    border-bottom-color: #3d3d3d;
+}
 .dropdown-toggle {
     padding-top: 9px;
     background-image: url(../images/sep-half.png);
@@ -95,7 +90,7 @@ h5 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: lighter;
 }
-.dropdown-menu {
+.nav-tabs .dropdown-menu {
     background-image: url(../images/sep-half.png);
     background-color: #4f4f4f;
 	color: #29abe2;
@@ -103,6 +98,7 @@ h5 {
 	font-weight: lighter;
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
     width: 135px;
+    margin-top: 4px;
     margin-left: -1px;
     border-color: #383737;
     border-top-style: dashed;
