@@ -23,8 +23,8 @@ Globals:
     resume_google_doc: 'https://docs.google.com/document/d/blahblahblah'
     # in your google doc, you can go to download as and right click copy that
     # URL, or you can host a live copy at another URL
-    resume_pdf_download: 'https://docs.google.com/document/d/blahblahblah/export?format=pdf'
-    resume_docx_download: 'https://docs.google.com/document/d/blahblahblah/export?format=docx'
+    resume_pdf_URL: 'https://docs.google.com/document/d/blahblahblah/export?format=pdf'
+    resume_docx_URL: 'https://docs.google.com/document/d/blahblahblah/export?format=docx'
     # setting to false will remove fork me corner banner
     fork_me: True
     # Boolean, if set to True, will generate new panel with below info

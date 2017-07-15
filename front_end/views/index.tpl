@@ -25,8 +25,8 @@
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="menu-drop-item" target="_blank" href="{{gdoc_URL}}"  role="button" data-toggle="tooltip" data-placement="bottom" title="Go to Google doc, or download directly">Live Doc</a>
             <h6 class="dropdown-header">Direct Downloads</h6>
-              <a class="menu-drop-item" href="{{resume_pdf_download_URL}}">Download .PDF</a>
-              <a class="menu-drop-item" href="{{resume_docx_download_URL}}">Download .Docx</a>
+              <a class="menu-drop-item" href="{{resume_pdf_URL}}">Download .PDF</a>
+              <a class="menu-drop-item" href="{{resume_docx_URL}}">Download .Docx</a>
             </div>
           </div>
         </li>

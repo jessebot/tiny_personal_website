@@ -43,8 +43,8 @@ def index():
     github_URL = get_global_variable('github_URL')
     linkedin_URL = get_global_variable('linkedin_URL')
     gdoc_URL = get_global_variable('resume_google_doc')
-    resume_pdf_download_URL = get_global_variable('resume_pdf_download')
-    resume_docx_download_URL = get_global_variable('resume_docx_download')
+    resume_pdf_URL = get_global_variable('resume_pdf_URL')
+    resume_docx_URL = get_global_variable('resume_docx_URL')
     try:
         fork_me = get_global_variable('fork_me')
     except:
@@ -58,10 +58,10 @@ def index():
                     browser_tab_title=browser_tab_title, main_pic=main_pic,
                     name=name, gdoc_URL=gdoc_URL, fork_me=fork_me, 
                     github_URL=github_URL, linkedin_URL=linkedin_URL,
-                    resume_pdf_download_URL=resume_pdf_download_URL,
-                    resume_docx_download_URL=resume_docx_download_URL,
-                    optional_panel_title=optional_panel_title,
-                    optional_panel_pic=optional_panel_pic, blurb=blurb,
+                    resume_pdf_URL=resume_pdf_URL, occupation=occupation,
+                    resume_docx_URL=resume_docx_URL, likes=likes,
+                    optional_panel_title=optional_panel_title, blurb=blurb,
+                    optional_panel_pic=optional_panel_pic, skills=skills,
                     optional_panel_button_text=optional_panel_button_text,
                     optional_panel_button_URL=optional_panel_button_URL)
 
