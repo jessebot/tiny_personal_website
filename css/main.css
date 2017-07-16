@@ -30,10 +30,6 @@ h3, h4, h5 {
 	font-weight: lighter;
 }
 
-h5 {
-	margin-left:5px;
-}
-
 /**********card and nav**********/   
 .card {
     border: 1px solid #383737;
@@ -41,6 +37,7 @@ h5 {
     background-color: #3d3d3d;
     color: white;
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    width: 350px;
 }
 .top-desc {
     opacity: .7;
@@ -52,8 +49,8 @@ h5 {
     color: white;
     padding: .5rem;
     position: absolute;
-    top: -20px;
-    left: 121px;
+    top: -30px;
+    left: 60px;
     bottom: 0px;
     right: 0px;
     box-shadow: 2px 2px 4px 0px rgba(21, 21, 21, 0.75);
@@ -130,27 +127,65 @@ h5 {
     text-align: center;
 }
 
+.container {
+        position: fixed;
+        padding: 0;
+        top: 7%;
+        left: 7%;
+}
 
 @media (min-width: 576px) {
     .container {
-      padding: 40px 10px 20px 10px;
+        top: 8%;
+        left: 10%;
+    }
+    .top-desc {
+        top: -30px;
+        left: 60px;
+    }
+    .card {
+        width: 400px;
     }
 }
 
 @media (min-width: 768px) {
     .container {
-      padding: 40px 0px 20px 0px;
+        top: 8%;
+        left: 13%;
+    }
+    .top-desc {
+        top: -30px;
+        left: 60px;
+    }
+    .card {
+        width: 400px;
     }
 }
 
 @media (min-width: 992px) {
     .container {
-      padding: 40px 0px 20px 0px;
+        top: 8%;
+        left: 5%;
+    }
+    .card {
+        width: 475px;
+    }
+    .top-desc {
+        top: -20px;
+        left: 121px;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-      padding: 40px 50px 0px 50px;
+        top: 8%;
+        left: 5%;
+    }
+    .card {
+        width: 475px;
+    }
+    .top-desc {
+        top: -20px;
+        left: 121px;
     }
 }

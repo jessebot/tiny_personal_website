@@ -1,11 +1,9 @@
 % include('header.tpl')
-<div class="container align-self-center">
-<div class="row justify-content-center">
-<div class="col-xl-8 col-lg-9 col-md-11 col-sm-12">
-  <div class="card mx-auto" style="width: 475px;">
-    <img class="img-fluid" src="/images/{{globals['image']}}"  alt="What I look like.">
+<div class="container">
+  <div class="card mx-auto">
+    <img class="img-fluid rounded" src="/images/{{globals['image']}}"  alt="What I look like.">
     <!-- overlay -->
-    <pre class="top-desc">
+    <pre class="top-desc rounded">
 {{globals['name'].upper()}} = {'occupation': '{{globals['occupation']}}',
 % final_item = len(globals['skills']) - 1
 % for i, skill in enumerate(globals['skills']):
@@ -75,7 +73,5 @@
         </div> <!-- row -->
     </div> <!-- card footer -->
   </div> <!-- card -->
-</div> <!-- col -->
-</div> <!-- row -->
 
 % include('footer.tpl')
