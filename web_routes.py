@@ -68,28 +68,18 @@ def index():
 
 @route('/images/<filename>')
 def images(filename):
-    return static_file(filename, root='{0}/front_end/images'.format(WEB_ROOT))
+    return static_file(filename, root='{0}/images'.format(WEB_ROOT))
 
 
 @route('/js/<filename>')
 def js(filename):
-    return static_file(filename, root='{0}/front_end/js'.format(WEB_ROOT))
+    return static_file(filename, root='{0}/js'.format(WEB_ROOT))
 
 
 @route('/css/<filename>')
 def css(filename):
-    return static_file(filename, root='{0}/front_end/css'.format(WEB_ROOT))
+    return static_file(filename, root='{0}/css'.format(WEB_ROOT))
 
 @route('/fonts/<filename>')
 def fonts(filename):
-    return static_file(filename, root='{0}/front_end/fonts'.format(WEB_ROOT))
-
-@route('/love')
-def love():
-    favicon = get_global_variable('favicon')
-    return template('love', favicon=favicon)
-
-@route('/hate')
-def hate():
-    favicon = get_global_variable('favicon')
-    return template('hate', favicon=favicon)
+    return static_file(filename, root='{0}/fonts'.format(WEB_ROOT))
