@@ -1,7 +1,7 @@
 #!/usr/bin/python
-# Code by JesseBot@Linux.com
-# 2/11/16
-# Production web routing bottle file
+# Code by Jesse Hitch - JesseBot@Linux.com
+# 7/15/17
+# Production Web Routing File
 
 import bottle
 from bottle import redirect, request, response, route
@@ -12,58 +12,37 @@ import sys
 import yaml
 
 
-def get_global_variable(global_variable):
+def get_global_variables():
     """ gets global variable given string variable name"""
     with open('./config/config.yaml', 'r') as f:
         doc = yaml.load(f)
-    txt = doc["Globals"][global_variable]
+    txt = doc["Globals"]
+    return txt
+
+
+def get_web_root():
+    """ gets global variable given string variable name"""
+    with open('./config/config.yaml', 'r') as f:
+        doc = yaml.load(f)
+    txt = doc["Globals"]['web_root']
     return txt
 
 
 # set logging
 log.basicConfig(stream=sys.stderr, level=log.INFO)
 log.info("logging config loaded")
-# Grab site specific information
-WEB_ROOT = get_global_variable('web_root')
+# Grab site specific information -YAML
+WEB_ROOT = get_web_root()
 # full path to HTML templates
 bottle.TEMPLATE_PATH.insert(0,
-                            '{0}/front_end/views/'.format(WEB_ROOT))
+                            '{0}/views/'.format(WEB_ROOT))
 
 
 @route('/')
 def index():
-    favicon = get_global_variable('favicon')
-    browser_tab_title = get_global_variable('website_title')
-    main_pic = get_global_variable('profile_image')
-    name = get_global_variable('profile_name')
-    occupation = get_global_variable('occupation')
-    skills = get_global_variable('skills')
-    likes = get_global_variable('likes')
-    blurb = get_global_variable('profile_blurb')
-    github_URL = get_global_variable('github_URL')
-    linkedin_URL = get_global_variable('linkedin_URL')
-    gdoc_URL = get_global_variable('resume_google_doc')
-    resume_pdf_URL = get_global_variable('resume_pdf_URL')
-    resume_docx_URL = get_global_variable('resume_docx_URL')
-    try:
-        fork_me = get_global_variable('fork_me')
-    except:
-        fork_me = None
-    optional_panel = get_global_variable('optional_panel')
-    optional_panel_title = get_global_variable('opt_panel_title')
-    optional_panel_pic = get_global_variable('opt_panel_image')
-    optional_panel_button_text = get_global_variable('opt_panel_button_text')
-    optional_panel_button_URL = get_global_variable('opt_panel_URL')
-    return template('index', favicon=favicon, optional_panel=optional_panel,
-                    browser_tab_title=browser_tab_title, main_pic=main_pic,
-                    name=name, gdoc_URL=gdoc_URL, fork_me=fork_me, 
-                    github_URL=github_URL, linkedin_URL=linkedin_URL,
-                    resume_pdf_URL=resume_pdf_URL, occupation=occupation,
-                    resume_docx_URL=resume_docx_URL, likes=likes,
-                    optional_panel_title=optional_panel_title, blurb=blurb,
-                    optional_panel_pic=optional_panel_pic, skills=skills,
-                    optional_panel_button_text=optional_panel_button_text,
-                    optional_panel_button_URL=optional_panel_button_URL)
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    return template('index', globals=globals)
 
 
 @route('/images/<filename>')
@@ -71,14 +50,10 @@ def images(filename):
     return static_file(filename, root='{0}/images'.format(WEB_ROOT))
 
 
-@route('/js/<filename>')
-def js(filename):
-    return static_file(filename, root='{0}/js'.format(WEB_ROOT))
-
-
 @route('/css/<filename>')
 def css(filename):
     return static_file(filename, root='{0}/css'.format(WEB_ROOT))
+
 
 @route('/fonts/<filename>')
 def fonts(filename):
