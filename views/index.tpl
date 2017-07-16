@@ -1,35 +1,36 @@
 % include('header.tpl')
 <div class="container">
   <div class="card mx-auto">
-    <img class="img-fluid rounded" src="/images/{{globals['image']}}"
+    <img class="card-img img-fluid rounded"
+         src="/images/{{globals['image']}}"
          alt="What I look like.">
     <!-- overlay -->
-    <pre class="top-desc rounded">
+    <pre class="top-desc rounded d-flex justify-content-center">
 {{globals['name'].upper()}} = {'occupation': '{{globals['occupation']}}',
-% final_item = len(globals['skills']) - 1
-% for i, skill in enumerate(globals['skills']):
-%   if i == 0:   
-       'skills': [{{skill}}',
-%   end
-%   if i == final_item:
-                  '{{skill}}'],
-%   end
-%   if i != final_item and i != 0:
-                  '{{skill}}',
-%   end
-% end
-% final_item = len(globals['likes']) - 1
-% for i, like in enumerate(globals['likes']):
-%   if i == 0:   
-       'likes': ['{{like}}',
-%   end
-%   if i == final_item:
-                 '{{like}}']}
-%   end
-%   if i != final_item and i != 0:
-                 '{{like}}',
-%   end
-% end
+  % final_item = len(globals['skills']) - 1
+  % for i, skill in enumerate(globals['skills']):
+  %   if i == 0:   
+         'skills': ['{{skill}}',
+  %   end
+  %   if i == final_item:
+                    '{{skill}}'],
+  %   end
+  %   if i != final_item and i != 0:
+                    '{{skill}}',
+  %   end
+  % end
+  % final_item = len(globals['likes']) - 1
+  % for i, like in enumerate(globals['likes']):
+  %   if i == 0:   
+         'likes': ['{{like}}',
+  %   end
+  %   if i == final_item:
+                   '{{like}}']}
+  %   end
+  %   if i != final_item and i != 0:
+                   '{{like}}',
+  %   end
+  % end
     </pre>
     <div class="card-header">
       <ul class="nav nav-tabs card-header-tabs">
