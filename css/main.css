@@ -42,12 +42,11 @@ h3, h4, h5 {
 .top-desc {
     opacity: .7;
     background-color:rgba(0, 0, 0, 0.5);
-    width: 390px;
-    height: 170px;
-    font-size: small;
+    width: 440px;
+    height: 200px;
 	font-family: 'Cutive Mono';
     color: white;
-    padding: 1.1rem;
+    padding-top: 2rem;
     position: absolute;
     top: -30px;
     left: 60px;
