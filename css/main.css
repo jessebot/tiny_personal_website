@@ -46,10 +46,10 @@ h3, h4, h5 {
     height: 200px;
 	font-family: 'Cutive Mono';
     color: white;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     position: absolute;
-    top: -30px;
-    left: 60px;
+    top: -4%;
+    left: 13%;
     bottom: 0px;
     right: 0px;
     box-shadow: 2px 2px 4px 0px rgba(21, 21, 21, 0.75);
@@ -124,20 +124,23 @@ h3, h4, h5 {
 }
 
 .container {
-        position: fixed;
+        position: sticky;
         padding: 0;
-        top: 7%;
-        left: 7%;
+        padding-top: 5%;
+        padding-bottom: 5%;
 }
 
 @media (min-width: 576px) {
     .container {
-        top: 8%;
-        left: 10%;
+        padding-top: 9%;
+        padding-bottom: 5%;
     }
     .top-desc {
-        top: -30px;
-        left: 60px;
+        top: -4%;
+        left: 13%;
+        width: 400px;
+        height: 180px;
+        font-size: 80%;
     }
     .card {
         width: 400px;
@@ -146,12 +149,15 @@ h3, h4, h5 {
 
 @media (min-width: 768px) {
     .container {
-        top: 8%;
-        left: 13%;
+        padding-top: 5%;
+        padding-bottom: 50%;
     }
     .top-desc {
-        top: -30px;
-        left: 60px;
+        top: -4%;
+        left: 6%;
+        width: 400px;
+        height: 180px;
+        font-size: 80%;
     }
     .card {
         width: 400px;
@@ -160,25 +166,26 @@ h3, h4, h5 {
 
 @media (min-width: 992px) {
     .container {
-        top: 8%;
-        left: 5%;
+        padding-top: 5%;
+        padding-bottom: 50%;
     }
     .card {
         width: 475px;
     }
     .top-desc {
-        top: -20px;
-        left: 121px;
+        top: -4%;
+        left: 13%;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-        top: 8%;
-        left: 5%;
+        padding-top: 5.5%;
+        padding-bottom: 50%;
     }
     .top-desc {
-        top: -20px;
-        left: 107px;
+        top: -4%;
+        left: 17%;
+        width: 420px;
     }
 }
