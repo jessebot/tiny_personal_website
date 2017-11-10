@@ -31,7 +31,7 @@ h3, h4, h5 {
 }
 
 /**********card and nav**********/   
-.card {
+.card, .main-img {
     border: 1px solid #383737;
     background-image: url(../images/sep-half.png);
     background-color: #3d3d3d;
@@ -124,8 +124,8 @@ h3, h4, h5 {
 
 @media (min-width: 768px) {
     .container {
-        padding-top: 14%;
-        width: 768px;
+        padding-top: 5%;
+        min-width: 760px;
     }
 }
 
@@ -138,6 +138,6 @@ h3, h4, h5 {
 @media (min-width: 1200px) {
     .container {
         padding-top: 12%;
-        width: 1000px;
+        min-width: 1000px;
     }
 }
