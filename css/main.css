@@ -37,29 +37,14 @@ h3, h4, h5 {
     background-color: #3d3d3d;
     color: white;
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    width: 350px;
-}
-.top-desc {
-    opacity: .7;
-    background-color:rgba(0, 0, 0, 0.5);
-    width: 330px;
-    height: 150px;
-	font-family: 'Cutive Mono';
-    font-size: 65%;
-    color: white;
-    padding-top: 1.5rem;
-    position: absolute;
-    top: -3%;
-    left: 10%;
-    bottom: 0px;
-    right: 0px;
-    box-shadow: 2px 2px 4px 0px rgba(21, 21, 21, 0.75);
 }
 .card-header, .card-footer {
+	font-family: 'Cutive Mono';
     border: 1px solid #383737;
     background-image: url(../images/sep-half.png);
     background-color: #4f4f4f;
     border-bottom-color: #3d3d3d;
+    font-size: 1.5rem;
 }
 .card-footer {
     padding: .5rem 1.25rem;
@@ -80,7 +65,7 @@ h3, h4, h5 {
 }
 .card-text {
 	font-weight: lighter;
-	font-size: .75rem;
+	font-size: .85rem;
 }
 .nav-tabs .nav-link.active {
     background-image: url(../images/sep-half.png);
@@ -103,9 +88,10 @@ h3, h4, h5 {
 	color: #29abe2;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: lighter;
+    font-size: 1.4rem;
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    width: 135px;
-    margin-top: 4px;
+    width: 180px;
+    margin-top: 6px;
     margin-left: -1px;
     border-color: #383737;
     border-top-style: dashed;
@@ -117,7 +103,6 @@ h3, h4, h5 {
 }
 .menu-drop-item {
     padding: 1rem 1.6rem;
-    font-size: small;
 }
 
 .col-6 {
@@ -128,65 +113,28 @@ h3, h4, h5 {
         position: sticky;
         padding: 0;
         padding-top: 25%;
-        padding-bottom: 5o%;
 }
 
 @media (min-width: 576px) {
     .container {
-        padding-top: 25%;
-        padding-bottom: 50%;
-    }
-    .top-desc {
-        top: -4%;
-        left: 8%;
-        width: 400px;
-        height: 180px;
-        font-size: 80%;
-    }
-    .card {
-        width: 400px;
+        padding-top: 10%;
     }
 }
 
 @media (min-width: 768px) {
     .container {
         padding-top: 5%;
-        padding-bottom: 50%;
-    }
-    .top-desc {
-        top: -4%;
-        left: 6%;
-        width: 400px;
-        height: 180px;
-        font-size: 80%;
-    }
-    .card {
-        width: 400px;
     }
 }
 
 @media (min-width: 992px) {
     .container {
-        padding-top: 5.5%;
-        padding-bottom: 50%;
-    }
-    .card {
-        width: 475px;
-    }
-    .top-desc {
-        top: -4%;
-        left: 22%;
+        padding-top: 10%;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-        padding-top: 5.5%;
-        padding-bottom: 50%;
-    }
-    .top-desc {
-        top: -4%;
-        left: 17%;
-        width: 420px;
+        padding-top: 10%;
     }
 }
