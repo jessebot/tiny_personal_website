@@ -1,37 +1,13 @@
 % include('header.tpl')
 <div class="container">
-  <div class="card mx-auto">
-    <img class="card-img img-fluid rounded"
+  <div class="row d-flex justify-content-center align-items-center">
+  <div class="col-8 col-lg-4 col-md-5 col-sm-7" style="padding-bottom:2%">
+    <img class="img-fluid rounded"
          src="/images/{{globals['image']}}"
          alt="What I look like.">
-    <!-- overlay -->
-    <pre class="top-desc rounded d-flex justify-content-center">
-{{globals['name'].upper()}} = {'occupation': '{{globals['occupation']}}',
-  % final_item = len(globals['skills']) - 1
-  % for i, skill in enumerate(globals['skills']):
-  %   if i == 0:   
-         'skills': ['{{skill}}',
-  %   end
-  %   if i == final_item:
-                    '{{skill}}'],
-  %   end
-  %   if i != final_item and i != 0:
-                    '{{skill}}',
-  %   end
-  % end
-  % final_item = len(globals['likes']) - 1
-  % for i, like in enumerate(globals['likes']):
-  %   if i == 0:   
-         'likes': ['{{like}}',
-  %   end
-  %   if i == final_item:
-                   '{{like}}']}
-  %   end
-  %   if i != final_item and i != 0:
-                   '{{like}}',
-  %   end
-  % end
-    </pre>
+  </div>
+  <div class="col-11 col-sm-10 col-md-6 col-lg-6 offset-md-1">
+  <div class="card mx-auto">
     <div class="card-header">
       <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
@@ -77,7 +53,7 @@
                role="button" data-toggle="tooltip" data-placement="right"
                title="GitHub" style="box-shadow: none;">
               <img src="/images/github-cat.svg" class="img-fluid"
-                   style="height: 48px;">
+                   style="height: 60px;">
             </a>
           </div> <!-- circle -->
         </div> <!-- col -->
@@ -86,13 +62,15 @@
             <a target="_blank" href="{{globals['linkedin_URL']}}"
                role="button" data-toggle="tooltip" data-placement="left"
                title="Linkedin" style="box-shadow: none;">
-              <img src="/images/linkedin.svg" class="img-fluid" style="height: 48px;">
+              <img src="/images/linkedin.svg" class="img-fluid" style="height: 60px;">
             </a>
           </div><!-- circle -->
         </div> <!-- col -->
       </div> <!-- row -->
     </div> <!-- card footer -->
   </div> <!-- card -->
-</div><!-- /.container -->
+  </div> <!-- col -->
+  </div> <!-- row -->
+</div> <!-- container -->
 
 % include('footer.tpl')
