@@ -41,8 +41,14 @@ bottle.TEMPLATE_PATH.insert(0,
 @route('/')
 def index():
     # Grab site specific information - YAML
+    log.info("oh hi, this is the route?")
     globals = get_global_variables()
     return template('index', globals=globals)
+
+
+@route('/robots.txt')
+def index():
+    return static_file('robots.txt', root='{0}'.format(WEB_ROOT))
 
 
 @route('/images/<filename>')
@@ -58,3 +64,17 @@ def css(filename):
 @route('/fonts/<filename>')
 def fonts(filename):
     return static_file(filename, root='{0}/fonts'.format(WEB_ROOT))
+
+
+@route('/love')
+def love():
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    return template('love', globals=globals)
+
+
+@route('/hate')
+def hate():
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    return template('hate', globals=globals)
