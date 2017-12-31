@@ -124,7 +124,7 @@ h3, h4, h5 {
 
 @media (min-width: 768px) {
     .container {
-        padding-top: 5%;
+        padding-top: 20%;
         min-width: 760px;
     }
 }
