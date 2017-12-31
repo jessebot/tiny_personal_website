@@ -1,7 +1,7 @@
 % include('header.tpl')
 <div class="container">
   <div class="row d-flex justify-content-center align-items-center">
-  <div class="col-6 col-lg-4 col-md-4 col-sm-6 col-xl-4" style="padding-bottom:2%; padding-top:2%;">
+  <div class="col-8 col-lg-4 col-md-4 col-sm-7 col-xl-4" style="padding-bottom:2%; padding-top:2%;">
     <img class="img-fluid rounded main-img"
          src="/images/{{globals['image']}}"
          alt="What I look like.">
