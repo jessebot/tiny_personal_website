@@ -1,12 +1,12 @@
 % include('header.tpl')
 <div class="container">
   <div class="row d-flex justify-content-center align-items-center">
-  <div class="col-8 col-lg-4 col-md-4 col-sm-7 col-xl-4" style="padding-bottom:2%; padding-top:2%;">
+  <div class="col-7 col-lg-4 col-md-4 col-sm-7 col-xl-4 pb-1 m-1">
     <img class="img-fluid rounded main-img"
          src="/images/{{globals['image']}}"
          alt="What I look like.">
   </div>
-  <div class="col-10 col-sm-10 col-md-8 col-lg-6 offset-lg-1 offset-xl-1" style="padding-bottom:2%; padding-top:2%;">
+  <div class="col-10 col-sm-10 col-md-8 col-lg-6 offset-lg-1 offset-xl-1 pt-2 pb-2">
   <div class="card mx-auto">
     <div class="card-header">
       <ul class="nav nav-tabs card-header-tabs">

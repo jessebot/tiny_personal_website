@@ -110,7 +110,7 @@ h3, h4, h5 {
 }
 
 .container {
-        padding-top: 7%;
+        padding-top: 5%;
         padding-left: 0;
         padding-right: 0;
         max-width: 100%
@@ -118,13 +118,13 @@ h3, h4, h5 {
 
 @media (min-width: 576px) {
     .container {
-        padding-top: 7%;
+        padding-top: 5%;
     }
 }
 
 @media (min-width: 768px) {
     .container {
-        padding-top: 20%;
+        padding-top: 10%;
         min-width: 760px;
     }
 }
