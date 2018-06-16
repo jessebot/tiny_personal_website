@@ -10,10 +10,6 @@ import sys
 import yaml
 import personal_routes
 
-# set logging
-log.basicConfig(stream=sys.stderr, level=log.INFO)
-log.info("logging config loaded")
-
 
 def get_global_variables():
     """
@@ -29,30 +25,9 @@ def get_global_variables():
 WEB_ROOT = get_global_variables()['web_root']
 bottle.TEMPLATE_PATH.insert(0, '{0}/views/'.format(WEB_ROOT))
 
-
-@route('/')
-def index():
+@route('/next-band')
+def dev():
     # Grab site specific information - YAML
-    log.info("Good morning, sunshine. It's index time.")
+    log.info("oh hi, you must be here to see the name of my next band")
     globals = get_global_variables()
-    return template('index', globals=globals)
-
-
-@route('/robots.txt')
-def robots():
-    return static_file('robots.txt', root=WEB_ROOT+'')
-
-
-@route('/images/<filename>')
-def images(filename):
-    return static_file(filename, root=WEB_ROOT+'/images')
-
-
-@route('/css/<filename>')
-def css(filename):
-    return static_file(filename, root=WEB_ROOT+'/css')
-
-
-@route('/fonts/<filename>')
-def fonts(filename):
-    return static_file(filename, root=WEB_ROOT+'/fonts')
+    return template('next_band', globals=globals)
