@@ -1,0 +1,172 @@
+div.bhoechie-tab-container{
+  z-index: 10;
+  padding: 0 !important;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  border:1px solid #3d3d3d;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+  filter: alpha(opacity=97);
+}
+div.bhoechie-tab-menu{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  background-color: #3d3d3d;
+}
+div.bhoechie-tab-menu div.list-group{
+  background-color: #3d3d3d;
+  margin-bottom: 0;
+}
+
+div.bhoechie-tab-menu div.list-group>a:not(.active):last-child:hover,
+div.bhoechie-tab-menu div.list-group>a:not(.active):last-child:focus,
+div.bhoechie-tab-menu div.list-group>a:not(.active):first-child:hover,
+div.bhoechie-tab-menu div.list-group>a:not(.active):first-child:focus {
+  border-color: #1f1f1f;
+}
+
+div.bhoechie-tab-menu div.list-group>a {
+  margin-bottom: 0;
+  padding: 0px 0px 0px 0px;
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+  background-color: #3d3d3d;
+  background-image: url('../images/sep-half.png');
+  border-color: #383737;
+}
+div.bhoechie-tab-menu div.list-group>a .fa {
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+  background-color: #3d3d3d;
+  background-image: url('../images/sep-half.png');
+  border-color: #383737;
+}
+div.bhoechie-tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+  background-color: #3d3d3d;
+  background-image: url('../images/sep-half.png');
+  border-color: #383737;
+}
+div.bhoechie-tab-menu div.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+  border-color: #383737;
+}
+div.bhoechie-tab-menu div.list-group>a.active,
+div.bhoechie-tab-menu div.list-group>a.active .fa{
+  background-color: #333333;
+  background-image: url('../images/sep-half.png');
+  border-color: #383737;
+}
+div.bhoechie-tab-menu div.list-group>a.active:after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #333333;
+  background-image: url('../images/sep-half.png');
+}
+
+div.bhoechie-tab-content{
+  padding-left: 10px;
+  padding-top: 20px;
+  position: relative;
+}
+
+div.bhoechie-tab div.bhoechie-tab-content{
+  display: block;
+}
+
+div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+  display: none;
+}
+
+.tab-pane {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  top: 20%;
+  transform: translateY(+10%);
+}
+
+.nav-tabs {
+    margin: 0 0 0 0;
+    border-bottom: 1px solid transparent;
+    background-image: url('../images/sep-half.png');
+    background-color: #3d3d3d;
+}
+
+.nav-tabs>li {
+    background-image: url('../images/sep-half.png');
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.nav-tabs>li>a,
+.nav-tabs>li>a:focus,
+.nav-tabs>li>a:hover {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #3d3d3d;
+  background-image: url('../images/sep-half.png');
+}
+
+.nav-tabs>li>a:focus,
+.nav-tabs>li>a:hover {
+  border-color: #1f1f1f;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+  background-color: #333333;
+  background-image: url('../images/sep-half.png');
+  border-bottom: 1px solid #333333;
+  border-top: 1px solid transparent;
+  border-left: 1px solid #333333;
+  border-right: 1px solid transparent;
+}
+
+.nav-tabs>li.active>a:after {
+  content: '';
+  position: absolute;
+  left: 35%;
+  top: 110%;
+  margin-top: -13px;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid #333333;
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+}
+
+.container {
+   padding-top: 10px;
+}
+
+@media (min-width: 992px) {
+    .container {
+      padding-top: 95px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+      padding-top: 55px;
+    }
+}

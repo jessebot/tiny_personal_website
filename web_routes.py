@@ -48,6 +48,11 @@ def images(filename):
     return static_file(filename, root=WEB_ROOT+'/images')
 
 
+@route('/js/<filename>')
+def js(filename):
+    return static_file(filename, root=WEB_ROOT+'/js')
+
+
 @route('/css/<filename>')
 def css(filename):
     return static_file(filename, root=WEB_ROOT+'/css')
