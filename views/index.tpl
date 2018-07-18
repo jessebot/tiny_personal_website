@@ -18,18 +18,18 @@
         <div class="col-lg-8 col-md-4 col-sm-6 col-xl-8">
           <div class="dash-unit bhoechie-tab-container">
             <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-4">
-                <a href="#resume" aria-control="resume" role="tab" data-toggle="tab">
+              <li role="presentation" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-4 active">
+                <a href="#resume" aria-control="resume" role="tab" data-toggle="tab" aria-expanded="true">
                   <img src="/images/googledocs.svg" style="width: 64px;">
                 </a>
                 </li>
               <li role="presentation" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <a href="#linkedin" aria-control="linkedin" role="tab" data-toggle="tab">
+                <a href="#linkedin" aria-control="linkedin" role="tab" data-toggle="tab" aria-expanded="false">
                   <img src="/images/linkedin.svg" style="width: 64px;">
                 </a>
               </li>
               <li role="presentation" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-6">
-                <a href="#github" aria-control="github" role="tab" data-toggle="tab">
+                <a href="#github" aria-control="github" role="tab" data-toggle="tab" aria-expanded="false">
                   <img src="/images/github-cat.svg" style="width: 64px;">
                 </a>
               </li>

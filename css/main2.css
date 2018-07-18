@@ -58,10 +58,8 @@ h5 {
     background-image: url(../images/sep-half.png);
     background-color: #3d3d3d;
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 17px;
+    margin-bottom: 17px;
 }
 
 /*--- Dash Unit / Used in Dashboard page ---*/
@@ -848,6 +846,7 @@ a:hover {
 .fc-header {margin-top:15px;}
 .fc-header-title h2{font-size:10px; }
 .fc-header-right {display:none}
+}
 
 /* portrait tablet */
 @media (min-width: 767px) and (max-width: 768px) {

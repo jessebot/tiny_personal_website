@@ -6,6 +6,23 @@
         $(function () {
           $('[data-toggle="tooltip"]').tooltip()
           });
+        $(document).ready(function() {
+            $("div.list-group>a").click(function(e) {
+                e.preventDefault();
+                $(this).siblings('a.active').removeClass("active");
+                $(this).addClass("active");
+                var HalfUnit = $(this).parent().parent().parent()
+                var tabChildren = HalfUnit.children("div.bhoechie-tab").children("div.bhoechie-tab-content");
+                var tabChildrenActive = HalfUnit.children("div.bhoechie-tab").children("div.bhoechie-tab-content.active");
+                var index = $(this).index()
+                $(tabChildren).eq(index).addClass("active");
+                $(tabChildrenActive).removeClass("active");
+              });
+          });
+          $('#mainTabs a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+           });
     </script>
   </body>
 </html>

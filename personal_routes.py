@@ -20,14 +20,56 @@ def get_global_variables():
     txt = doc["Globals"]
     return txt
 
+def get_ld_variables(ld_var):
+    """
+    Gets global variables from YAML file. Returns dict.
+    """
+    with open('./config/config_likes_dislikes.yaml', 'r') as f:
+        doc = yaml.load(f)
+    txt = doc[ld_var]
+    return txt
+
+def sorted_vars(some_dict):
+    """
+    Iterates through a dict and fixes list values to be alphabitized
+    takes a dict.
+    """
+    for key, value in some_dict.items():
+        value.sort()
+        some_dict[key] = value
+    return some_dict
 
 # full path to HTML templates
 WEB_ROOT = get_global_variables()['web_root']
 bottle.TEMPLATE_PATH.insert(0, '{0}/views/'.format(WEB_ROOT))
 
 @route('/next-band')
-def dev():
+def nextband():
     # Grab site specific information - YAML
     log.info("oh hi, you must be here to see the name of my next band")
     globals = get_global_variables()
     return template('next_band', globals=globals)
+
+
+@route('/love')
+def love():
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    likes = get_ld_variables("likes")
+    sorted_likes = sorted_vars(likes)
+    return template('love', globals=globals, likes=sorted_likes)
+
+
+@route('/hate')
+def hate():
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    dislikes = get_ld_variables("dislikes")
+    sorted_dislikes = sorted_vars(dislikes)
+    return template('hate', globals=globals, dislikes=sorted_dislikes)
+
+@route('/dev')
+def dev():
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    return template('dev', globals=globals)
