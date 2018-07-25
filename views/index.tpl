@@ -1,7 +1,7 @@
 % include('header_main.tpl')
     <div class="container">
       <div class="row">
-          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="col-xs-8 col-sm-4 col-md-3 col-lg-3">
             <div class="dash-unit bhoechie-tab-container">
               <dtitle>
                   <span aria-hidden="true" class="li_user fs1"></span>
@@ -15,7 +15,7 @@
              title="{{globals['name']}}">
             </div><!-- /.dash-unit -->
           </div><!-- /.col -->
-        <div class="col-xs-9 col-sm-7 col-md-8 col-lg-8 col-xl-8">
+        <div class="col-xs-10 col-sm-7 col-md-8 col-lg-8 col-xl-8">
           <div class="dash-unit bhoechie-tab-container">
             <ul class="nav nav-tabs" role="tablist">
               <li role="presentation" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-4 active">

@@ -22,7 +22,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <!-- Custom styles for this template -->
-    <link href="/css/main2.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
     <link href="css/tabs.css" rel="stylesheet">
     <link href="css/font-style.css" rel="stylesheet">
       

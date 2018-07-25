@@ -868,7 +868,7 @@ a:hover {
 }
 
 @media (max-width: 800px) {
-.col-xs-6, .col-xs-9 {
+.col-xs-8, .col-xs-10 {
     float: none;
     margin: 0 auto;
 }

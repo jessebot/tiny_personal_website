@@ -55,6 +55,9 @@ div.bhoechie-tab-menu div.list-group>a:first-child{
 div.bhoechie-tab-menu div.list-group>a:last-child{
   border-bottom-right-radius: 0;
   -moz-border-bottom-right-radius: 0;
+  background-color: #3d3d3d;
+  background-image: url('../images/sep-half.png');
+  color: #ffffff;
   border-color: #383737;
 }
 div.bhoechie-tab-menu div.list-group>a.active,
