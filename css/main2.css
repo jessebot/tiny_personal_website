@@ -26,7 +26,7 @@ body {
 h1 {
 font-family: 'Raleway', sans-serif;}
 
-h3,h4 , h5 {
+h3, h4, h5 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight:lighter;
 }
@@ -867,11 +867,19 @@ a:hover {
 
 }
 
+@media (max-width: 800px) {
+.col-xs-6, .col-xs-9 {
+    float: none;
+    margin: 0 auto;
+}
+}
+
 /* Landscape iphone 5 and samsung galaxy */
 @media (min-width: 560px) and (max-width: 685px) {
 	.info-aapl ul {
   		margin-left:40%;
 }
+
 
 }
 
