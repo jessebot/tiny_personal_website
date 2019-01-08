@@ -1,6 +1,21 @@
 % include('header_band.tpl')
     <div class="container">
       <div class="row">
+          <!-- About Section -->
+          <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-12">
+            <div class="dash-unit bhoechie-tab-container">
+              <dtitle>
+                  <span aria-hidden="true" class="li_star fs1"></span>
+                About
+              </dtitle>
+              <hr>
+            <div class="aboutText">
+                This website is dedicated to the name of your next band. Eventually, you'll be able to submit a band name, and it'll generate some cool art for you, but right now, it's under construction.
+            </div>
+            </div><!-- /.dash-unit -->
+          </div><!-- /.col -->
+
+          <!-- Input section -->
           <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-12">
             <div class="dash-unit bhoechie-tab-container">
               <dtitle>
@@ -23,19 +38,18 @@
               </center>
             </div> <!-- /.dash-unit -->
           </div> <!-- /.col -->
+
+          <!-- Previous bands -->
           <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-12">
             <div class="dash-unit bhoechie-tab-container">
               <dtitle>
                   <span aria-hidden="true" class="li_star fs1"></span>
-                About
+                Previous Potential Band Names
               </dtitle>
               <hr>
-            <div class="aboutText">
-                This website is dedicated to the name of your next band. Eventually, you'll be able to submit a band name, and it'll generate some cool art for you, but right now, it's under construction.
-            </div>
+              
             </div><!-- /.dash-unit -->
           </div><!-- /.col -->
-
 
       </div><!-- /.row ALL CARDS-->
     </div><!-- /.container MAIN-->

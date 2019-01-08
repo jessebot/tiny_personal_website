@@ -9,3 +9,5 @@ views/love.tpl
 **.pyc
 photo/*
 logs/*
+personal_routes.py
+robots.txt
