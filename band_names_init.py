@@ -28,6 +28,9 @@ def main ():
     conn = sqlite3.connect('bands.db')
     
     c = conn.cursor()
+    
+    # Create table
+    c.execute('''CREATE TABLE bands (name text, time text)''')
 
     # Insert a row of data
     insert = '''INSERT INTO bands VALUES ('{0}','{1}')'''.format(args.band, now)
