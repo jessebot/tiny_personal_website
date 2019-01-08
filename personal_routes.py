@@ -39,16 +39,24 @@ def sorted_vars(some_dict):
         some_dict[key] = value
     return some_dict
 
+
+# Web routes below this line...
 # full path to HTML templates
 WEB_ROOT = get_global_variables()['web_root']
 bottle.TEMPLATE_PATH.insert(0, '{0}/views/'.format(WEB_ROOT))
+
+@route('/google1ab5c73d1f31729d.html')
+def goog():
+    # allow google to crawl me harder
+    return static_file('google1ab5c73d1f31729d.html', root=WEB_ROOT+'/views/')
+
 
 @route('/next-band')
 def nextband():
     # Grab site specific information - YAML
     log.info("oh hi, you must be here to see the name of my next band")
     globals = get_global_variables()
-    return template('next_band', globals=globals)
+    return template('next-band', globals=globals)
 
 
 @route('/love')
@@ -68,8 +76,48 @@ def hate():
     sorted_dislikes = sorted_vars(dislikes)
     return template('hate', globals=globals, dislikes=sorted_dislikes)
 
+
+@route('/resources')
+def hate():
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    dislikes = get_ld_variables("dislikes")
+    sorted_dislikes = sorted_vars(dislikes)
+    return template('hate', globals=globals, dislikes=sorted_dislikes)
+
+
+@route('/nutrition')
+def nutrition():
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    return template('nutrition', globals=globals)
+
+
+@route('/trans')
+def trans():
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    return template('trans', globals=globals)
+
+
+@route('/tech')
+def tech():
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    return template('tech', globals=globals)
+
+
+@route('/resources')
+def hate():
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    dislikes = get_ld_variables("dislikes")
+    sorted_dislikes = sorted_vars(dislikes)
+    return template('resources', globals=globals, dislikes=sorted_dislikes)
+
 @route('/dev')
 def dev():
     # Grab site specific information - YAML
     globals = get_global_variables()
     return template('dev', globals=globals)
+
