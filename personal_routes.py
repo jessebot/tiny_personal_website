@@ -6,6 +6,7 @@ from bottle import redirect, request, response, route
 from bottle import run, static_file, template
 import logging as log
 import os
+import subprocess
 import sys
 import yaml
 import personal_routes
@@ -20,6 +21,7 @@ def get_global_variables():
     txt = doc["Globals"]
     return txt
 
+
 def get_ld_variables(ld_var):
     """
     Gets global variables from YAML file. Returns dict.
@@ -28,6 +30,7 @@ def get_ld_variables(ld_var):
         doc = yaml.load(f)
     txt = doc[ld_var]
     return txt
+
 
 def sorted_vars(some_dict):
     """
@@ -45,6 +48,7 @@ def sorted_vars(some_dict):
 WEB_ROOT = get_global_variables()['web_root']
 bottle.TEMPLATE_PATH.insert(0, '{0}/views/'.format(WEB_ROOT))
 
+
 @route('/google1ab5c73d1f31729d.html')
 def goog():
     # allow google to crawl me harder
@@ -52,11 +56,37 @@ def goog():
 
 
 @route('/next-band')
-def nextband():
-    # Grab site specific information - YAML
+def next_band():
     log.info("oh hi, you must be here to see the name of my next band")
+    # Grab site specific information - YAML
     globals = get_global_variables()
     return template('next-band', globals=globals)
+
+
+@route('/next-band' method='POST')
+def next_band_submit():
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    cmd = "./band_names.py --band '{0}'".format(band_name)
+    process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
+    output, error = process.communicate()
+    if error:
+        return error
+    else:
+        return True
+
+
+@route('/next-band-get-all')
+def next_band_get_all():
+    # Grab site specific information - YAML
+    globals = get_global_variables()
+    cmd = "./band_names.py --get-all"
+    process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
+    output, error = process.communicate()
+    if error:
+        return error
+    else:
+        return output
 
 
 @route('/love')
@@ -115,9 +145,9 @@ def hate():
     sorted_dislikes = sorted_vars(dislikes)
     return template('resources', globals=globals, dislikes=sorted_dislikes)
 
+
 @route('/dev')
 def dev():
     # Grab site specific information - YAML
     globals = get_global_variables()
     return template('dev', globals=globals)
-
