@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +9,29 @@
     <meta name="theme-color" content="#1f1f1f" />
     <link rel="icon" type="image/x-icon" href="/images/{{globals['favicon']}}">
 
+    <meta property="og:url" content="https://jessebot.io">
     <meta property="og:image" content="/images/{{globals['image']}}">
     <meta property="og:title" content="{{globals['website_title']}}">
     <meta property="og:description" content="Resume website for {{globals['name']}}">
     <meta property="og:type" content="profile">
 
+
+
     <title>{{globals['website_title']}}</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <! -- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="/css/main.css" rel="stylesheet">
+    <link href="css/tabs.css" rel="stylesheet">
+    <link href="css/font-style.css" rel="stylesheet">
+      
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
   </head>
 
   <body>
