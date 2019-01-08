@@ -4,23 +4,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Resume website for {{globals['name']}}">
+    <meta name="description" content="Input the name of your next band and get some cool cover art.">
     <meta name="author" content="Jesse Hitch">
     <meta name="theme-color" content="#1f1f1f" />
     <link rel="icon" type="image/x-icon" href="/images/{{globals['favicon']}}">
 
-    <meta property="og:url" content="https://jessebot.io">
-    <meta property="og:image" content="/images/{{globals['image']}}">
-    <meta property="og:title" content="{{globals['website_title']}}">
-    <meta property="og:description" content="Resume website for {{globals['name']}}">
-    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://jessebot.io/next-band">
+    <meta property="og:image" content="/images/noun_rock_monster.png">
+    <meta property="og:title" content="NAME OF MY NEXT BAND">
+    <meta property="og:description" content="Input the name of your next band and get some cool cover art.">
+    <!-- <meta property="og:type" content="profile"> -->
 
 
 
-    <title>{{globals['website_title']}}</title>
+    <title>MY NEXT BAND</title>
 
     <!-- Bootstrap core CSS -->
-    <! -- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="/css/main.css" rel="stylesheet">
