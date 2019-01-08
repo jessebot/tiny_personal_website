@@ -69,7 +69,7 @@ def main():
     parser = argparse.ArgumentParser(description='Document cool band names.')
     parser.add_argument('--band', nargs='?', type=str,
                         help='a COOL band name')
-    parser.add_argument('--get-all-bands', dest='get_all', action='store_true',
+    parser.add_argument('--get-all', dest='get_all', action='store_true',
                         help='list all cool band names')
 
     args = parser.parse_args()
