@@ -19,7 +19,7 @@
                           <img class="img-responsive img-rounded center-block main-img" src="/images/noun_rock_monster.png" alt="Band Monster >:3" style="height:250px;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Band Monster">
                       </div>
                       <div class="form-group col-md-6">
-                          You'll be able to submit a band name, and it'll generate some cool art for you. Currently under construction.
+                          Submit a band name, and it'll generate some cool art for you. Currently under construction.
                           <label for="inputBand" class="sr-only">Input Band Name Here</label>
                           <input type="text" class="form-control" id="inputBand" name="inputBand" placeholder="Band Name">
                           <button type="submit" class="btn btn-primary btn-sm mb-2">Submit</button>
@@ -40,11 +40,13 @@
                 Previous Potential Band Names
               </dtitle>
               <hr>
+              <center>
               <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-12">
               % for band_set in bands:
                     <li>{{band_set[0]}}</li><br />
               % end
               </div>
+              </center>
               
             </div><!-- /.dash-unit -->
           </div><!-- /.col -->
