@@ -25,7 +25,7 @@ def main ():
 
     now = str(datetime.datetime.now())
     
-    conn = sqlite3.connect('bands.db')
+    conn = sqlite3.connect('my-next-band.db')
     
     c = conn.cursor()
     

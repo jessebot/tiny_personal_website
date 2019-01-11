@@ -28,7 +28,7 @@ def add_new_band(band):
     """
     now = str(datetime.datetime.now())
 
-    conn = sqlite3.connect('bands.db')
+    conn = sqlite3.connect('my-next-band.db')
     c = conn.cursor()
 
     # Insert a row of data
@@ -55,7 +55,7 @@ def get_all_bands():
     grabs all the bands from sqlite3 db
     - returns a list of tuples with 2 strings of band_name, and time_stamp
     """
-    conn = sqlite3.connect('bands.db')
+    conn = sqlite3.connect('my-next-band.db')
 
     c = conn.cursor()
 
