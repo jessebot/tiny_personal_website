@@ -2,42 +2,44 @@
 # script by jessebot@linux.com to get the bands and do the things
 # 1/7/19 -- 2019? D:
 import argparse
-import sqlite3
 import datetime
-import time
+import random
+import sqlite3
 
 
-def adapt_datetime(ts):
-    """
-    Internet says I need dis
-    """
-    return time.mktime(ts.timetuple())
-
+def generate_band_art(band):
+    categories = ['abstract', 'animals', 'business', 'cats', 'city', 'food',
+                  'night', 'life', 'fashion', 'people', 'nature', 'sports',
+                  'technics', 'transport']
+    category = random.choice(categories)
+    url = "http://lorempixel.com/400/400/{0}/{1}".format(category, band)
+    
 
 def add_new_band(band):
     """
     Takes a str of a bands name and adds it to a sqlite3 db
-    returns True?
+    returns the string "Success" if all went well.
     """
     now = str(datetime.datetime.now())
 
     conn = sqlite3.connect('bands.db')
-
     c = conn.cursor()
 
     # Insert a row of data
-    insert = '''INSERT INTO bands VALUES ('{0}','{1}')'''.format(args.band,
-                                                                 now)
-    c.execute(insert)
-
-    # Save (commit) the changes
-    conn.commit()
+    insert = '''INSERT INTO bands VALUES ('{0}','{1}')'''.format(band, now)
+    try:
+        c.execute(insert)
+        # Save (commit) the changes
+        conn.commit()
+    except Exception as e:
+        log.error("Error: {0}".format(e))
+        return e
 
     # close connection
     conn.close()
 
     # uh, idunno
-    return True
+    return "Success"
 
 
 def get_all_bands():
@@ -75,10 +77,10 @@ def main():
     args = parser.parse_args()
 
     if args.band:
-        add_new_band(args.band)
+        print add_new_band(args.band)
 
     if args.get_all:
-        get_all_bands()
+        print get_all_bands()
 
 
 if __name__ == "__main__":

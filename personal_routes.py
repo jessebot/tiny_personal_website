@@ -1,15 +1,14 @@
 #!/usr/bin/python
 # Jesse Hitch - JesseBot@Linux.com
-# 7/15/18 Production Web Routing File
+# 1/10/19 Production Web Routing File -- Personal Routes
 import bottle
 from bottle import redirect, request, response, route
 from bottle import run, static_file, template
 import logging as log
 import os
-import subprocess
 import sys
 import yaml
-import personal_routes
+import band_names_db
 
 
 def get_global_variables():
@@ -60,14 +59,11 @@ def next_band():
     log.info("oh hi, you must be here to see the name of my next band")
     # Grab site specific information - YAML
     globals = get_global_variables()
-    cmd = "./band_names.py --get-all"
 
-    # verify what we're running
-    log.info("Running command: {0}".format(cmd))
-    process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
-    output, error = process.communicate()
-    log.info("received cmd response: {0}".format(output))
-    return template('next-band', globals=globals, bands=output)
+    all_bands = band_names_db.get_all_bands()
+    log.info("received band.db response: {0}".format(all_bands))
+
+    return template('next-band', globals=globals, bands=all_bands)
 
 
 @route('/next-band', method='POST')
@@ -75,20 +71,17 @@ def next_band_submit():
     # get band from post
     inputBand = request.forms.get('inputBand')
     log.info("received band name: {0}".format(inputBand))
-    cmd = "./band_names.py --band '{0}'".format(inputBand)
 
-    # verify what we're running
-    log.info("Running command: {0}".format(cmd))
-    process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
-    output, error = process.communicate()
-    log.info("received cmd response: {0}".format(output))
-
-    # return just the error. TODO: make legit error page or banner or somethin
-    if error:
-        return "<p>{0}</p>".format(error)
+    # add new band to db
+    add_new_band = band_names_db.add_new_band(inputBand)
 
     # if success redirect back to main page
-    redirect("/next-band")
+    if add_new_band == "Success":
+        redirect("/next-band")
+    
+    # else error
+    return "<p>THERE WAS AN ERROR</p>"
+
 
 @route('/next-band-get-all')
 def next_band_get_all():
