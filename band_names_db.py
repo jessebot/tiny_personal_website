@@ -3,6 +3,7 @@
 # 1/7/19 -- 2019? D:
 import argparse
 import datetime
+import subprocess
 import sqlite3
 
 
@@ -29,7 +30,12 @@ def add_new_band(band):
     conn.close()
    
     # create the band art!
-    generate_band_art(band)
+    bashCommand = './generate_band_art.py --band "{0}"'.format(band)
+    process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
+    output, error = process.communicate()
+    log.info(output)
+    if error:
+        log.error(error)
 
     # uh, idunno
     return "Success"
