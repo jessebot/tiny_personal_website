@@ -1,8 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # script by jessebot@linux.com to get the bands and do the things
 # 1/7/19 -- 2019? D:
 import argparse
-import datetime
 import subprocess
 import sqlite3
 
@@ -12,30 +11,12 @@ def add_new_band(band):
     Takes a str of a bands name and adds it to a sqlite3 db
     returns the string "Success" if all went well.
     """
-    now = str(datetime.datetime.now())
-
-    conn = sqlite3.connect('my-next-band.db')
-    c = conn.cursor()
-
-    # Insert a row of data
-    insert = '''INSERT INTO bands VALUES ('{0}','{1}')'''.format(band, now)
-    try:
-        c.execute(insert)
-        # Save (commit) the changes
-        conn.commit()
-    except Exception as e:
-        return e
-
-    # close db connection
-    conn.close()
-   
     # create the band art!
-    bashCommand = './generate_band_art.py --band "{0}"'.format(band)
+    bashCommand = "./generate_band_art.py --band {0}".format(band)
+    print bashCommand
     process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     output, error = process.communicate()
-    log.info(output)
-    if error:
-        log.error(error)
+    print output
 
     # uh, idunno
     return "Success"
