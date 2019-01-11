@@ -51,12 +51,14 @@
               The name of my next band
               </dtitle>
               <hr style="margin-bottom: 0;">
+        <a href="/next-band">
         <img class="img-responsive img-rounded center-block main-img"
              src="/images/noun_rock_monster.png"
              alt="Boop."
              style="height:250px;"
              data-toggle="tooltip" data-placement="bottom"
              title="Name of my next band">
+        </a>
             </div><!-- /.dash-unit -->
           </div><!-- /.col -->
 
