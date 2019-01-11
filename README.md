@@ -44,5 +44,4 @@ A demo lives at my personal resume site: https://jessebot.io
 
 There's also some fun toys
 --------------------------
-Those toys are brought to you in part by
-- https://github.com/rushilsrivastava/image_search.git
+Those toys are brought to you in part by...

@@ -2,7 +2,6 @@ legacy/*
 config/config.yaml
 images/private/*
 images/swag.gif
-images/10-3-17_jesse.jpg
 images/favicon_jessebot.ico
 views/hate.tpl
 views/love.tpl
@@ -14,4 +13,3 @@ robots.txt
 bands.db
 images/favicon.ico
 images/jesserecent.jpg
-image_search/**
