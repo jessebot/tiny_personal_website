@@ -7,10 +7,10 @@ the bottle web framework and the front end is bootstrap. YAML is used for site
 
 Under the Hood
 --------------
-Bootstrap v4
-Bottle
-Google Fonts
-The Open Source Community <3
+* Bootstrap v4
+* Bottle
+* Google Fonts
+* The Open Source Community <3
 
 Setup
 -----
@@ -42,3 +42,7 @@ Sample Site
 
 A demo lives at my personal resume site: https://jessebot.io
 
+There's also some fun toys
+--------------------------
+Those toys are brought to you in part by
+- https://github.com/rushilsrivastava/image_search.git
