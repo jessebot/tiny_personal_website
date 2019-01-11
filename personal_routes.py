@@ -60,21 +60,35 @@ def next_band():
     log.info("oh hi, you must be here to see the name of my next band")
     # Grab site specific information - YAML
     globals = get_global_variables()
-    return template('next-band', globals=globals)
+    cmd = "./band_names.py --get-all"
 
-
-@route('/next-band' method='POST')
-def next_band_submit():
-    # Grab site specific information - YAML
-    globals = get_global_variables()
-    cmd = "./band_names.py --band '{0}'".format(band_name)
+    # verify what we're running
+    log.info("Running command: {0}".format(cmd))
     process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
     output, error = process.communicate()
-    if error:
-        return error
-    else:
-        return True
+    log.info("received cmd response: {0}".format(output))
+    return template('next-band', globals=globals, bands=output)
 
+
+@route('/next-band', method='POST')
+def next_band_submit():
+    # get band from post
+    inputBand = request.forms.get('inputBand')
+    log.info("received band name: {0}".format(inputBand))
+    cmd = "./band_names.py --band '{0}'".format(inputBand)
+
+    # verify what we're running
+    log.info("Running command: {0}".format(cmd))
+    process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
+    output, error = process.communicate()
+    log.info("received cmd response: {0}".format(output))
+
+    # return just the error. TODO: make legit error page or banner or somethin
+    if error:
+        return "<p>{0}</p>".format(error)
+
+    # if success redirect back to main page
+    redirect("/next-band")
 
 @route('/next-band-get-all')
 def next_band_get_all():

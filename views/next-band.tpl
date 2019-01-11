@@ -25,11 +25,11 @@
               <hr>
               <center>
           <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-12">
-                <form>
+                <form action="/next-band" method="post">
               <center>
                       <div class="form-group col-md-6">
                           <label for="inputBand" class="sr-only">Input Band Name Here</label>
-                          <input type="text" class="form-control" id="inputBand" placeholder="Band Name">
+                          <input type="text" class="form-control" id="inputBand" name="inputBand" placeholder="Band Name">
                           <button type="submit" class="btn btn-primary btn-sm mb-2">Submit</button>
                       </div>
               </center>

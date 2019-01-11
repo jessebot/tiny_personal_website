@@ -11,3 +11,6 @@ photo/*
 logs/*
 personal_routes.py
 robots.txt
+bands.db
+images/favicon.ico
+images/jesserecent.jpg
