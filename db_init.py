@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # script by jessebot@linux.com to get the bands and do the things
-# 1/7/19 -- 2019? D:
+# 1/10/19 -- 2019? D:
 import argparse
 import sqlite3
 import datetime
@@ -30,10 +30,12 @@ def main ():
     c = conn.cursor()
     
     # Create table
-    c.execute('''CREATE TABLE bands (name text, time text)''')
+    c.execute('''CREATE TABLE bands (name text, time text, image text)''')
 
     # Insert a row of data
-    insert = '''INSERT INTO bands VALUES ('{0}','{1}')'''.format(args.band, now)
+    insert = '''INSERT INTO bands VALUES ('{0}','{1}','{2}')'''.format(args.band,
+                                                                       now,
+                                                                       "placeholder")
     c.execute(insert)
     
     # Save (commit) the changes
