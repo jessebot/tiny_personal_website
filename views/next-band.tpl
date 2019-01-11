@@ -1,19 +1,6 @@
 % include('header_band.tpl')
     <div class="container">
       <div class="row">
-          <!-- About Section -->
-          <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-12">
-            <div class="dash-unit bhoechie-tab-container">
-              <dtitle>
-                  <span aria-hidden="true" class="li_star fs1"></span>
-                About
-              </dtitle>
-              <hr>
-            <div class="aboutText">
-                This website is dedicated to the name of your next band. Eventually, you'll be able to submit a band name, and it'll generate some cool art for you, but right now, it's under construction.
-            </div>
-            </div><!-- /.dash-unit -->
-          </div><!-- /.col -->
 
           <!-- Input section -->
           <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-12">
@@ -26,13 +13,19 @@
               <center>
           <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-12">
                 <form action="/next-band" method="post">
-              <center>
+                  <center>
+                      <div class="form-row align-items-center">
+                      <div class="col-md-5">
+                          <img class="img-responsive img-rounded center-block main-img" src="/images/noun_rock_monster.png" alt="Band Monster >:3" style="height:250px;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Band Monster">
+                      </div>
                       <div class="form-group col-md-6">
+                          You'll be able to submit a band name, and it'll generate some cool art for you. Currently under construction.
                           <label for="inputBand" class="sr-only">Input Band Name Here</label>
                           <input type="text" class="form-control" id="inputBand" name="inputBand" placeholder="Band Name">
                           <button type="submit" class="btn btn-primary btn-sm mb-2">Submit</button>
                       </div>
-              </center>
+                      </div>
+                  </center>
                 </form>
          </div>
               </center>
@@ -47,6 +40,11 @@
                 Previous Potential Band Names
               </dtitle>
               <hr>
+              <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-12">
+              % for band_set in bands:
+                    <li>{{band_set[0]}}</li><br />
+              % end
+              </div>
               
             </div><!-- /.dash-unit -->
           </div><!-- /.col -->
