@@ -32,7 +32,6 @@ def add_new_band(band):
         # Save (commit) the changes
         conn.commit()
     except Exception as e:
-        log.error("Error: {0}".format(e))
         return e
 
     # close connection

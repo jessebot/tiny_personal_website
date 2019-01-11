@@ -78,22 +78,8 @@ def next_band_submit():
     # if success redirect back to main page
     if add_new_band == "Success":
         redirect("/next-band")
-    
-    # else error
-    return "<p>THERE WAS AN ERROR</p>"
-
-
-@route('/next-band-get-all')
-def next_band_get_all():
-    # Grab site specific information - YAML
-    globals = get_global_variables()
-    cmd = "./band_names.py --get-all"
-    process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
-    output, error = process.communicate()
-    if error:
-        return error
     else:
-        return output
+        return "<p>THERE WAS AN ERROR: {0}</p>".format(add_new_band)
 
 
 @route('/love')
