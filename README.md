@@ -1,6 +1,10 @@
 tiny_personal_website
 =====================
 
+Come checkout the new iteration of this concept [here](https://github.com/jessebot/RaaS), called Resume as a Service.
+
+This repo is now essentially archived unless anyone would like to play with getting it Python3/Docker compliant.
+
 This is a Python based CMS for a small personal website. The back end uses
 the bottle web framework and the front end is bootstrap. YAML is used for site
  specific configurations. Tested with Python 2.7 only.
@@ -35,13 +39,3 @@ virutal host config. I recommend creating a special user and group for this
 
 5. All changes to HTML, CSS, JS, Python, or your core YAML will require an
  apache restart - with this specific configuration for the web server portion.
-
-
-Sample Site
------------
-
-A demo lives at my personal resume site: https://jessebot.io
-
-There's also some fun toys
---------------------------
-Those toys are brought to you in part by...
