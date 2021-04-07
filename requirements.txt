@@ -1,2 +1,2 @@
-bottle == 0.12.7
+bottle == 0.12.19
 PyYAML == 3.11
