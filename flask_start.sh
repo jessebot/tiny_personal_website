@@ -1,2 +1,2 @@
-export FLASK_APP=web_routes
+export FLASK_APP=app
 flask run

@@ -7,6 +7,22 @@ This is a Python based CMS for a small personal website. The back end uses
 the bottle web framework and the front end is bootstrap. YAML is used for site
  specific configurations. Tested with Python 3.10.7 only.
 
+ I originally wrote this 7 or 8 years ago, and recently absolutely borked my
+ newer website, resulting in me quickly resurrecting this thing in about a
+ day. It's... fine. It's not terrrible.
+
+ Here's the guide I used for digital ocean:
+ https://docs.digitalocean.com/tutorials/app-deploy-flask-app/
+
+ You want the following command plugged into where-ever this runs:
+
+ ```bash
+ gunicorn --worker-tmp-dir /dev/shm app:app
+ ```
+
+### Coming Soon
+better docker file
+
 Under the Hood
 --------------
 * Bootstrap v5

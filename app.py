@@ -5,8 +5,6 @@ from flask import render_template
 import logging as log
 import sys
 import yaml
-# not ready yet
-# import personal_app.routes
 
 # set logging
 log.basicConfig(stream=sys.stderr, level=log.INFO)
