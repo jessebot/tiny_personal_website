@@ -5,4 +5,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD ["flask", "--app=routes", "run"]
+CMD ["gunicorn", "app:app"]
