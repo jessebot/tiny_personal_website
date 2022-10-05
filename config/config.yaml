@@ -2,32 +2,41 @@
 # absolute path required
 web_root: '/var/www/html'
 # favicon, can take any image type
-favicon: 'favicon_smile.gif'
+favicon: 'favicon.ico'
 # domain name, or whatever you want the tab in the browser to say
 website_title: 'jessebot.work'
 # the default image shown at the front of the page
 image: './my_picture.png'
+# image alt text
+image_alt: 'Portrait selfie of a 30 year old person with an undercut and medium legnth blue hair parted to the side. They are smiling and wearing a black shirt.'
 # Your name
 name: 'Jesse Hitch'
 # Job Title
 occupation: 'DevOps Engineer'
+# blurb about yourself
+blurb: "I'm a DevOps engineer who's always looking for a fun project. I can get your CI/CD setup, create tool sets, and automate anything else you need. Python is my weapon of choice, and Linux remains my valiant companion. Together we navigate the ever changing waters of Kubernetes! I am excellent at relieving developer headaches due to tedious technical tasks, and I can also help your diversity and inclusion efforts!"
 # Skills - what you're good at.
 skills: ['linux', 'devops']
 # things you like
 likes: ['videogames', 'analogies', 'silly hair']
+# social links you want to display on the profile
+social_links:
+  - github
+  - gitlab
+  - linkedin
 # Full URL to your github
 github_URL: 'https://github.com/jessebot'
+# Full URL to your gitlab
+gitlab_URL: 'https://gitlab.com/jessebot'
 # Full URL to your linkedin public profile
-linkedin_URL: 'https://www.linkedin.com/in/jesse-hitch-8b5b023a/'
-# complete google doc sharing URL, assuming this is public
-resume_live_doc_URL: 'https://docs.google.com/document/d/blahblahblah'
+linkedin_URL: 'https://www.linkedin.com/in/jesse-hitch'
 # in your google doc, you can go to download as and right click copy that
 # URL, or you can host a live copy at another URL
-resume_pdf_URL: ''
+resume_pdf_URL: "https://docs.google.com/document/d/1O-qsyVP444QeaBi9EwygDlGzIWvMMUJP80cPsk2Z6lg/export?format=pdf"
 # setting to false will remove fork me corner banner
-fork_me: True
+fork_me: true
 # Boolean, if set to True, will generate new panel with below info
-optional_panel: True
+optional_panel: true
 # this could be social media, other conent, whatever suits you!
 opt_panel_title: "Linux Newbie Class"
 opt_panel_image: "penguin_copy.png"

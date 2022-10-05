@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.10
 # Jesse Hitch - JesseBot@Linux.com
 from flask import Flask
-from flask import render_template, url_for
+from flask import render_template
 import logging as log
 import sys
 import yaml
@@ -22,27 +22,15 @@ def get_global_variables():
     return doc
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 
 @app.route('/')
 def index():
+    """
+    single page resume site with downloadable PDF for resume
+    """
     # Grab site specific information - YAML
     log.info("Good morning, sunshine. It's index time.")
     globals = get_global_variables()
     return render_template('index.html', globals=globals)
-
-
-@app.route('/static/images/<filename>')
-def images(filename):
-    return url_for('static', filename=filename)
-
-
-@app.route('/static/js/<filename>')
-def js(filename):
-    return url_for('static', filename=filename)
-
-
-@app.route('/static/css/<filename>')
-def css(filename):
-    return url_for('static', filename=filename)
