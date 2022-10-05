@@ -1,27 +1,24 @@
 tiny_personal_website
 =====================
 
-Come checkout the new iteration of this concept [here](https://github.com/jessebot/RaaS), called Resume as a Service.
-
-This repo is now essentially archived unless anyone would like to play with getting it Python3/Docker compliant.
+THIS IS BACK FROM THE DEAD :D
 
 This is a Python based CMS for a small personal website. The back end uses
 the bottle web framework and the front end is bootstrap. YAML is used for site
- specific configurations. Tested with Python 2.7 only.
+ specific configurations. Tested with Python 3.10.7 only.
 
 Under the Hood
 --------------
-* Bootstrap v4
-* Bottle
-* Google Fonts
+* Bootstrap v5
+* Flask
 * The Open Source Community <3
 
-Setup
------
+
+## Old setup
 
 1. Clone this github repo into your desired webroot.
 
-2. Install missing libraries if any: `pip install -r requirements.txt`
+2. Install missing libraries if any: `pip3.10 install -r requirements.txt`
 
 3. You can configure everything (e.g. the webroot absolute path, your photo,
  quote, etc) by renaming `config/config.yaml.sample` to `config.yaml` and 
