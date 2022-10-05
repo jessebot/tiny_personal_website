@@ -22,7 +22,6 @@ def get_global_variables():
     return doc
 
 
-# full path to HTML templates
 app = Flask(__name__)
 
 
@@ -31,7 +30,7 @@ def index():
     # Grab site specific information - YAML
     log.info("Good morning, sunshine. It's index time.")
     globals = get_global_variables()
-    return render_template('index', globals=globals)
+    return render_template('index.html', globals=globals)
 
 
 @app.route('/static/images/<filename>')

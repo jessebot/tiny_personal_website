@@ -4,17 +4,17 @@ web_root: '/var/www/html'
 # favicon, can take any image type
 favicon: 'favicon_smile.gif'
 # domain name, or whatever you want the tab in the browser to say
-website_title: 'example.com'
+website_title: 'jessebot.work'
 # the default image shown at the front of the page
 image: './my_picture.png'
 # Your name
-name: 'Bob Smith'
+name: 'Jesse Hitch'
 # Job Title
-occupation: 'professional basket weaver'
+occupation: 'DevOps Engineer'
 # Skills - what you're good at.
-skills: ['cooking','web design']
+skills: ['linux', 'devops']
 # things you like
-likes: ['videogames','analogies','silly hair']
+likes: ['videogames', 'analogies', 'silly hair']
 # Full URL to your github
 github_URL: 'https://github.com/jessebot'
 # Full URL to your linkedin public profile
@@ -23,8 +23,7 @@ linkedin_URL: 'https://www.linkedin.com/in/jesse-hitch-8b5b023a/'
 resume_live_doc_URL: 'https://docs.google.com/document/d/blahblahblah'
 # in your google doc, you can go to download as and right click copy that
 # URL, or you can host a live copy at another URL
-resume_pdf_URL: 'https://docs.google.com/document/d/blahblahblah/export?format=pdf'
-resume_docx_URL: 'https://docs.google.com/document/d/blahblahblah/export?format=docx'
+resume_pdf_URL: ''
 # setting to false will remove fork me corner banner
 fork_me: True
 # Boolean, if set to True, will generate new panel with below info
