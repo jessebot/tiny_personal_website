@@ -7,10 +7,7 @@
 	font-family: 'Mononoki';
 }
 
-.nf-fa-user_secret:before {
-	content: "\f21b";
-}
-
+/* ------- social icons ----------- */
 .nf-fa-github_alt:before {
 	content: "\f113";
 }
@@ -21,4 +18,17 @@
 
 .nf-fa-linkedin_square:before {
 	content: "\f08c";
+}
+
+/* ------- user icons ----------- */
+.nf-fa-user_secret:before {
+	content: "\f21b";
+}
+
+.nf-mdi-human:before {
+	content: "\f7e5";
+}
+
+.nf-mdi-account:before {
+    content: "\f503";
 }
