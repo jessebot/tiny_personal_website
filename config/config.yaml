@@ -1,44 +1,52 @@
 ---
-# absolute path required
-web_root: '/var/www/html'
 # favicon, can take any image type
 favicon: 'favicon.ico'
 # domain name, or whatever you want the tab in the browser to say
 website_title: 'jessebot.work'
-# the default image shown at the front of the page
-image: './my_picture.png'
+# set to false to remove fork me banner in uppper right corner
+fork_me: true
+
+
+# image shown at the front of the page, this should be in /static/img
+profile_image: 'my_picture.png'
 # image alt text
-image_alt: 'Portrait selfie of a 30 year old person with an undercut and medium legnth blue hair parted to the side. They are smiling and wearing a black shirt.'
+profile_image_alt: 'Portrait selfie of a 30 year old person with an undercut and medium legnth blue hair parted to the side. They are smiling and wearing a black shirt.'
 # Your name
 name: 'Jesse Hitch'
+# Pronouns
+pronouns: 'they/them'
+# blurb about yourself
+blurb: "You can probably call me if there's a problem with kubernetes, CI/CD, a python app, or you need help with most things to do with the web. I also put too much effort into terminal based interfaces, and if you let me, will draw pictures of my infra."
+
 # Job Title
 occupation: 'DevOps Engineer'
-# blurb about yourself
-blurb: "I'm a DevOps engineer who's always looking for a fun project. I can get your CI/CD setup, create tool sets, and automate anything else you need. Python is my weapon of choice, and Linux remains my valiant companion. Together we navigate the ever changing waters of Kubernetes! I am excellent at relieving developer headaches due to tedious technical tasks, and I can also help your diversity and inclusion efforts!"
 # Skills - what you're good at.
-skills: ['linux', 'devops']
-# things you like
-likes: ['videogames', 'analogies', 'silly hair']
+skills:
+  - linux
+  - devops
+  - python
+  - kubernetes
+  - cicd
+
+# This is for a section to humanize the user
+likes:
+  - comfy couches
+  - videogames
+  - analogies
+
 # social links you want to display on the profile
 social_links:
-  - github
-  - gitlab
-  - linkedin
-# Full URL to your github
-github_URL: 'https://github.com/jessebot'
-# Full URL to your gitlab
-gitlab_URL: 'https://gitlab.com/jessebot'
-# Full URL to your linkedin public profile
-linkedin_URL: 'https://www.linkedin.com/in/jesse-hitch'
-# in your google doc, you can go to download as and right click copy that
-# URL, or you can host a live copy at another URL
+  github:
+    # Full URL to your social link
+    URL: 'https://github.com/jessebot'
+    # can be any glyph in nerdfonts
+    icon: 'nf-fa-github_alt'
+  gitlab:
+    URL: 'https://gitlab.com/jessebot'
+    icon: "nf-fa-gitlab"
+  linkedin:
+    URL: 'https://www.linkedin.com/in/jesse-hitch'
+    icon: 'nf-fa-linkedin_square'
+
+# this can be from any provider, but has to download a PDF file
 resume_pdf_URL: "https://docs.google.com/document/d/1O-qsyVP444QeaBi9EwygDlGzIWvMMUJP80cPsk2Z6lg/export?format=pdf"
-# setting to false will remove fork me corner banner
-fork_me: true
-# Boolean, if set to True, will generate new panel with below info
-optional_panel: true
-# this could be social media, other conent, whatever suits you!
-opt_panel_title: "Linux Newbie Class"
-opt_panel_image: "penguin_copy.png"
-opt_panel_button_text: "How To Unix/Linux"
-opt_panel_URL: "http://howtonix.info/"

@@ -1,4 +1,4 @@
-﻿/*!
+﻿/* This is built on:
  * BLOCKS - Responsive Dashboard Theme
  *
  * Copyright 2013 
@@ -18,9 +18,31 @@
 
 
 /**********BASE CONFIGURATIONS**********/   
+
+@font-face {
+  font-family: 'Mononoki';
+  src: url('/static/fonts/mononoki-Regular-Nerd-Font-Complete-Mono.ttf');
+}
+
+[class^="nf-"]:before {
+	font-family: 'Mononoki';
+}
+
+.nf-fa-github_alt:before {
+	content: "\f113";
+}
+
+.nf-fa-gitlab:before {
+	content: "\f296";
+}
+
+.nf-fa-linkedin_square:before {
+	content: "\f08c";
+}
+
 body {
   background:#1f1f1f;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Mononoki';
   text-align: center;
   color: silver;
   justify-content: center;
@@ -29,26 +51,26 @@ body {
 }
 
 h1 {
-font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 h3, h4, h5 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight:lighter;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
 }
 
 h2{
-	font-size:22px;
+    font-size: 22px;
 }
 
 h3 {
-	font-size:46px;
-	color:#b2c831
+	font-size: 46px;
+    color: #b2c831
 }
 
 h5 {
-	color:#b2c831;
-	margin-left:5px;
+    color: #b2c831;
+    margin-left: 5px;
 }
 
 /***********BLOCKS & WRAPS***********/
@@ -63,9 +85,9 @@ h5 {
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
     margin-top: 17px;
     margin-bottom: 17px;
-    border-radius: 4px;
+    border-radius: 80px;
     -moz-border-radius: 4px;
-    border:1px solid #3d3d3d;
+    border: 1px solid #3d3d3d;
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
     -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
@@ -74,15 +96,15 @@ h5 {
 
 /*--- Dash Unit / Used in Dashboard page ---*/
 .dash-unit {		
-	margin-bottom: 30px;
-	padding-bottom:10px;
-	background-image:url('../images/sep-half.png');
-	background-color: #3d3d3d;
-	color:white;
+    margin-bottom: 30px;
+	padding-bottom: 10px;
+	background-image: url('../images/sep-half.png');
+	background-color:  #3d3d3d;
+	color: white;
     width: 25rem;
     border-radius: 4px;
     -moz-border-radius: 4px;
-    border:1px solid #3d3d3d;
+    border: 1px solid #3d3d3d;
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
     -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
@@ -92,11 +114,10 @@ h5 {
 }
 
 .dash-unit:hover {
-	background-color: #4f4f4f;
-	-moz-box-shadow:    3px 3px 2px 0px #151515;
+    background-color: #4f4f4f;
+    -moz-box-shadow:    3px 3px 2px 0px #151515;
     -webkit-box-shadow: 3px 3px 2px 0px #151515;
     box-shadow:         3px 3px 2px 0px #151515;
-
 }
 
 .dash-unit dtitle {
@@ -106,7 +127,7 @@ h5 {
 	margin:8px;
 	padding:0px;
 	height:inherit	
-	}
+}
 	
 .dash-unit hr {
   	border: 0;
@@ -141,7 +162,6 @@ h5 {
 	text-align:center;
 }
 
-
 .dash-unit h3 {
 	font-weight:300;
 	font-size: 15px;
@@ -154,7 +174,6 @@ h5 {
 	text-align:center;
 }
 
-
 .dash-unit p {
 	font-size: 14px;
 	font-weight: 200;
@@ -162,11 +181,11 @@ h5 {
 	color: inherit;
 	margin: 0 0 10px;
 	padding:10px;
- }
+}
 
 .dash-unit h4 {
-	padding-left:5px;
-	margin-top:2px;
+	padding-left: 5px;
+	margin-top: 2px;
 	font-size: 13px;
 	font-weight:lighter;
 	line-height: 1;
@@ -176,10 +195,10 @@ h5 {
 
 .dash-unit bold{
 	font-family: 'Open Sans', sans-serif;
-	font-size:26px;
-	font-weight:bold;
-	color:#fff;
-	vertical-align:middle;
+	font-size: 26px;
+	font-weight: bold;
+	color: #fff;
+	vertical-align: middle;
 }
 
 
@@ -190,8 +209,8 @@ h5 {
 	border: 1px solid #383737;
 	background-image:url('../images/sep-half.png');
 	background-color: #3d3d3d;
-	color:white;
-	height:130px;
+	color: white;
+	height: 130px;
     width: 18rem;
 }
 
@@ -321,8 +340,8 @@ input[type=submit] {
 	  *-webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
-
 }
+
 input[type=text], textarea {
 	background: #cdcbcc;
 	font-size: 13px;
@@ -335,101 +354,28 @@ input[type=text], textarea {
 	text-indent: 18px;
 	margin: 0 0 18px;
 }
+
 textarea {
 	line-height: 18px;
 	padding: 18px;
 	text-indent: 0;	
 }
+
 .textarea-container { margin: 0 18px; }
 .textarea-container textarea { margin-left: -18px; }
 
-/**********Clock Configuration**********/   
 
-digiclock {
-	font-size: 30px;
-	color: #fff;
-	text-align: center;
-	line-height: 60px;
-	margin-left: auto	
-}
-
-.clockcenter {
-	text-align:center;
-}
-
-
-/**********DONUT CHARTS STYLES**********/
-#load {
-	width: 11.313em;
-	height: 11.313em;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	margin-bottom: 1.063em;
-	background-position: center center;
-	margin:auto;
-}
-
-#space {
-	width: 11.313em;
-	height: 11.313em;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	margin-bottom: 1.063em;
-	background-position: center center;
-	margin:auto;
-}
-
-
-/**********LINE AND BARS**********/
-
-.section-graph {
-  position: relative;
-  height: 130px;
-  color: #fff;
-  background-image: linear-gradient(color-stops(#b2c831, #b2c831 50%, #b2c831 50%));
-  margin-bottom:20px;
-}
-.section-graph .graph-info {
-  z-index: 99;
-  position: absolute;
-  font-weight: bold;
-  margin-top: 12px;
-  margin-left: 21px;
-  width: 100px;
-}
-.section-graph .graph-info .graph-arrow {
-  width: 0;
-  height: 0;
-  margin-top: 18px;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-bottom: 4px solid white;
-  float: left;
-}
-.section-graph .graph-info .graph-info-big {
-  font-size: 24px;
-  float: left;
-  margin-left: 3px;
-}
-.section-graph .graph-info .graph-info-small {
-  margin-left: 3px;
-  font-size: 12px;
-  font-weight: normal;
-  color: rgba(255, 255, 255, 0.5);
-  clear: left;
-  margin-left: 8px;
-}
-/*
- * Info Section
- */
+/****************** Info Section ****************/
 .info-aapl {
   text-align: center;
 
 }
+
 .info-aapl ul {
   margin-left:30%;
 
 }
+
 .info-aapl li {
   margin: 0;
   display: block;
@@ -440,6 +386,7 @@ digiclock {
   float:left;
   position: relative;
 }
+
 .info-aapl li span {
   display: block;
   width: 9px;
@@ -447,33 +394,13 @@ digiclock {
   position: absolute;
   bottom: 0;
 }
+
 .info-aapl li span.orange {
   background-color: #fa1d2d;
 }
+
 .info-aapl li span.green {
   background-color: #b2c831;
-}
-
-/**********TWITTER WIDGET **********/
-#jstwitter ul li{
-	color:#bdbdbd;
-	padding:.5em .75em;
-}
-
-#jstwitter ul{
-	margin-left:0;
-	list-style:none
-}
-
-#jstwitter:first-child{
-	border-top:0
-}
-
-ul#jstwitter li a{
-	font-size:10px;
-	font-style:italic;
-	color:#666;
-	text-decoration:none
 }
 
 /********** CUSTOMIZED BUTTON **********/
@@ -511,6 +438,7 @@ ul#jstwitter li a{
 .accordion-group {
 	border: 1px solid #222;
 }
+
 .accordion-heading {
   background-color: #5a5a5a;
   *background-color: #5a5a5a;
@@ -525,6 +453,7 @@ ul#jstwitter li a{
 	background-image: linear-gradient(to bottom, #707070, #707070);*
 }
 
+
 /**********Link Styling**********/   
 a {
   color: #b2c831;
@@ -537,7 +466,6 @@ a:hover {
 }
 
 
-
 /**********FooterWrap Section**********/   
 #footerwrap {
     background:#262626;
@@ -548,14 +476,12 @@ a:hover {
     border-top-width:8px;
     border-top-color:#1d1d1d;
     text-align:center
-
 }
 
 #footerwrap p {
 	color:white;
 	font-size:12px;
 } 
-
 
 
 /**********Media Styles**********/   
@@ -565,34 +491,31 @@ a:hover {
 	.info-aapl ul {
   		margin-left:10px;
   		float:left;
-}
+    }
 
-#load {
-	margin-left:5px;
-	margin-right:10px;
-}
+    #load {
+        margin-left:5px;
+        margin-right:10px;
+    }
 
-#space {
-	margin-left:5px;
-	margin-right:10px;
-}
-
+    #space {
+        margin-left:5px;
+        margin-right:10px;
+    }
 }
 
 @media (max-width: 800px) {
-.col-xs-8, .col-xs-10 {
-    float: none;
-    margin: 0 auto;
-}
+    .col-xs-8, .col-xs-10 {
+        float: none;
+        margin: 0 auto;
+    }
 }
 
 /* Landscape iphone 5 and samsung galaxy */
 @media (min-width: 560px) and (max-width: 685px) {
 	.info-aapl ul {
   		margin-left:40%;
-}
-
-
+    }
 }
 
 @media (min-width: 750px) {

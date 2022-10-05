@@ -6,16 +6,16 @@
             <div class="dash-unit">
                 <dtitle>
                 <br />
-                <i class="bi bi-person-circle"
-                    style="font-size: 1rem;"></i>
+                <i class="nf-fa-user_secret"
+                    style="font-size: 2rem;"></i>
 
-                &nbsp; About {{ globals['name'] }}
+                About {{ globals['name'] }}
                 </dtitle>
                 <hr style="margin-bottom: 0;">
                 <img class="main-img"
-                     src="/static/img/{{ globals['image'] }}"
-                     alt="{{ globals['image_alt'] }}"
-                     style="width:250px;"
+                     src="/static/img/{{ globals['profile_image'] }}"
+                     alt="{{ globals['profile_image_alt'] }}"
+                     style="width:200px;"
                      data-toggle="tooltip" data-placement="bottom"
                      title="{{ globals['name'] }}">
                 <br />
@@ -36,37 +36,17 @@
                 <br />
                 <center>
                     <p>
-                    &nbsp;
-                    <!-- Linkedin -->
-                    <a target="_blank"
-                       href="{{ globals['linkedin_URL'] }}"
-                       data-toggle="tooltip" data-placement="left"
-                       title="Linkedin">
-                        <i class="bi bi-linkedin"
-                            style="font-size: 2rem; color: cornflowerblue;">
-                        </i>
-                    </a>
-                    &nbsp;
-                    <!-- Github section -->
-                    <a target="_blank" 
-                       href="{{ globals['github_URL'] }}"
-                       data-toggle="tooltip" data-placement="top"
-                       title="GitHub">
-                        <i class="bi bi-github"
-                           style="font-size: 2rem; color: cornflowerblue;">
-                        </i>
-                    </a>
-                    &nbsp;
-                    <!-- Gitlab section -->
-                    <a target="_blank" 
-                       href="{{ globals['gitlab_URL'] }}"
-                       data-toggle="tooltip" data-placement="right"
-                       title="GitLab">
-                        <i class="bi bi-git"
-                           style="font-size: 2rem; color: cornflowerblue;">
-                        </i>
-                    </a>
-                    &nbsp;
+                    {% for link in globals['social_links'] %}
+                        <!-- Linkedin -->
+                        <a target="_blank"
+                           href="{{ globals['social_links'][link]['URL'] }}"
+                           data-toggle="tooltip" data-placement="left"
+                           title="{{ link }}">
+                            <span class="{{ globals['social_links'][link]['icon'] }}"
+                                style="font-size: 4rem; color: cornflowerblue;">
+                            </span>
+                        </a>
+                    {% endfor %}
                     </p>
                 <hr>
                 <dtitle>
