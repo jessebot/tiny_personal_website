@@ -60,12 +60,16 @@ h5 {
 }
 
 .main-img {
-    border: 1px solid #383737;
-    background-image: url(../images/sep-half.png);
-    background-color: #3d3d3d;
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
     margin-top: 17px;
     margin-bottom: 17px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    border:1px solid #3d3d3d;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-clip: padding-box;
 }
 
 /*--- Dash Unit / Used in Dashboard page ---*/
@@ -157,7 +161,7 @@ h5 {
 	line-height: 16px;
 	color: inherit;
 	margin: 0 0 10px;
-	padding:5px;
+	padding:10px;
  }
 
 .dash-unit h4 {

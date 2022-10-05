@@ -3,16 +3,16 @@
 
     <div class="row">
         <div class="col-4">
-            <div class="rounded dash-unit shadow">
+            <div class="dash-unit">
                 <dtitle>
                 <br />
                 <i class="bi bi-person-circle"
-                    style="font-size: 1rem; color: cornflowerblue;"></i>
+                    style="font-size: 1rem;"></i>
 
                 &nbsp; About {{ globals['name'] }}
                 </dtitle>
                 <hr style="margin-bottom: 0;">
-                <img class="img-responsive img-rounded center-block main-img"
+                <img class="main-img"
                      src="/static/img/{{ globals['image'] }}"
                      alt="{{ globals['image_alt'] }}"
                      style="width:250px;"
@@ -27,7 +27,7 @@
     <!-- links on their own row -->
     <div class="row">
         <div class="col-4">
-            <div class="dash-unit rounded shadow">
+            <div class="dash-unit">
                 <br />
                 <center>
                     <dtitle>Social Links</dtitle>
@@ -38,7 +38,7 @@
                     <p>
                     &nbsp;
                     <!-- Linkedin -->
-                    <a target="_blank" 
+                    <a target="_blank"
                        href="{{ globals['linkedin_URL'] }}"
                        data-toggle="tooltip" data-placement="left"
                        title="Linkedin">
