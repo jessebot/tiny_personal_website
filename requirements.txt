@@ -1,2 +1,2 @@
-bottle == 0.12.20
-PyYAML == 5.4
+PyYAML==6.0
+Flask==2.2.2
