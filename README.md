@@ -42,11 +42,12 @@ Under the Hood
 
 6. for docker, you can just do:
    ```bash
-   docker build . -t <name of tag you want>`
-   # if you want to test it locally, you can do this
+   docker build . -t <name of tag you want>
+
+   # to test locally, you can do -p 8000:8080 to forward
+   # port 8080 on the container to port 8000 on your local machine
    docker run --rm -p 8000:8080 <name of the tag you used>
    ```
-   Then you can go to http://127.0.0.1:8080 in a browser to view your changes.
 
    For testing locally, _without_ a docker rebuild:
    ```bash
