@@ -6,7 +6,7 @@
         <div class="col-4">
             <div class="dash-unit">
                 <dtitle>
-                <span class="nf-mdi-account" style="font-size: 1.5rem;"></span>
+                <span class="nf-mdi-account" style="font-size: 1.2rem;"></span>
                 About {{ config_vars['name'] }}
                 </dtitle>
                 <hr style="margin-bottom: 0;">
@@ -22,44 +22,30 @@
         </div><!-- /.col -->
     </div><!-- /.row -->
 
-    <!-- links on their own row -->
-    <div class="row">
-        <div class="col-4">
-            <div class="dash-unit">
-                <br />
-                <center>
-                    <dtitle>Social Links</dtitle>
-                    <hr>
-                </center>
-                <br />
-                <center>
-                    <p>
-                    &nbsp;
-                    {% for lnk in social_links %}
-                        <!-- Linkedin -->
-                        <a target="_blank"
-                           href="{{ social_links[lnk]['URL'] }}"
-                           data-toggle="tooltip" data-placement="left"
-                           title="{{ lnk }}">
-                            <span class="{{ social_links[lnk]['icon'] }}">
-                                &nbsp;
-                            </span>
-                        </a>
-                    {% endfor %}
-                    </p>
-                <hr>
-                <dtitle>
-                    <a href="{{ config_vars['resume_pdf_URL'] }}"
-                       data-toggle="tooltip" data-placement="bottom"
-                       title="Download Resume as a PDF"
-                       style="box-shadow: none;">
-                        Download Resume
-                    </a>
-                </dtitle>
-                </center>
-            </div><!-- /.dash-unit -->
-        </div><!-- /.col -->
-    </div><!-- /.row links card-->
+    <div class="dash-unit">
+        <dtitle>Social Links</dtitle>
+        <hr>
+        &nbsp;&nbsp;
+        {% for lnk in social_links %}
+            <a target="_blank"
+               href="{{ social_links[lnk]['URL'] }}"
+               data-toggle="tooltip" data-placement="left"
+               title="{{ lnk }}">
+                <span class="{{ social_links[lnk]['icon'] }}">
+                    &nbsp;&nbsp;
+                </span>
+            </a>
+        {% endfor %}
+        <hr>
+        <dtitle>
+            <a href="{{ config_vars['resume_pdf_URL'] }}"
+               data-toggle="tooltip" data-placement="bottom"
+               title="Download Resume as a PDF"
+               style="box-shadow: none;">
+                Download Resume
+            </a>
+        </dtitle>
+    </div><!-- /.dash-unit -->
 
 </div><!-- /.container MAIN-->
 {% include('footer_main.html') %}

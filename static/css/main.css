@@ -67,8 +67,8 @@ h5 {
 
 .main-img {
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    margin-top: 17px;
-    margin-bottom: 17px;
+    margin-top: 18px;
+    margin-bottom: 11px;
     border-radius: 80px;
     -moz-border-radius: 4px;
     border: 1px solid #3d3d3d;
@@ -80,15 +80,15 @@ h5 {
 
 /* ----------------- Dash Unit ----------------- */
 .dash-unit {
-    margin-bottom: 30px;
-    padding-bottom: 10px;
+    margin-bottom:    30px;
+    padding-bottom:   10px;
     background-image: url('../images/sep-half.png');
-    background-color:  #3d3d3d;
+    background-color: #3d3d3d;
     color: white;
     width: 25rem;
+    border: 1px solid #3d3d3d;
     border-radius: 4px;
     -moz-border-radius: 4px;
-    border: 1px solid #3d3d3d;
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
     -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
@@ -104,20 +104,40 @@ h5 {
     box-shadow:         3px 3px 2px 0px #151515;
 }
 
-.dash-unit dtitle {
-    font-size:      11px;
-    text-transform: uppercase;
-    color:          #ffffff;
-    margin:         8px;
-    padding:        0px;
-    height:         inherit;
-}
-
 .dash-unit hr {
     border:           0;
     border-top:       1px solid #151515;
     border-top-style: dashed;
     margin-top:       3px;
+}
+
+.dash-unit p {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 16px;
+    color: inherit;
+    margin: 0 0 12px;
+    padding: 14px;
+}
+
+.dash-unit bold {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.dash-unit dtitle {
+    font-size:      11px;
+    text-transform: uppercase;
+    color:          #ffffff;
+    margin:         8px;
+    padding-top:        4px;
+    padding-bottom:     0px;
+    padding-left:       0px;
+    padding-right:      0px;
+    height:         inherit;
 }
 
 .dash-unit h1 {
@@ -158,15 +178,6 @@ h5 {
     text-align:   center;
 }
 
-.dash-unit p {
-    font-size: 14px;
-    font-weight: 200;
-    line-height: 16px;
-    color: inherit;
-    margin: 0 0 10px;
-    padding:10px;
-}
-
 .dash-unit h4 {
     padding-left: 5px;
     margin-top: 2px;
@@ -175,14 +186,6 @@ h5 {
     line-height: 1;
     letter-spacing: 0px;
     color: #fff;
-}
-
-.dash-unit bold{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 26px;
-    font-weight: bold;
-    color: #fff;
-    vertical-align: middle;
 }
 
 
@@ -205,6 +208,21 @@ h5 {
     box-shadow:         3px 3px 2px 0px #151515;
 }
 
+.half-unit hr {
+    border:           0;
+    border-top:       1px solid #151515;
+    border-top-style: dashed;
+    margin-top:       3px;
+}
+
+.half-unit bold{
+    font-family: 'Open Sans', sans-serif;
+    font-size:26px;
+    font-weight:bold;
+    color:#fff;
+    vertical-align:middle;
+}
+
 .half-unit dtitle {
     font-size: 10px;
     text-transform: uppercase;
@@ -212,13 +230,6 @@ h5 {
     margin: 8px;
     padding: 0px;
     height: inherit;
-}
-
-.half-unit hr {
-    border:           0;
-    border-top:       1px solid #151515;
-    border-top-style: dashed;
-    margin-top:       3px;
 }
 
 .half-unit h1 {
@@ -242,15 +253,6 @@ h5 {
     line-height: 1;
     letter-spacing: 0px;
     color: #fff;
-}
-
-
-.half-unit bold{
-    font-family: 'Open Sans', sans-serif;
-    font-size:26px;
-    font-weight:bold;
-    color:#fff;
-    vertical-align:middle;
 }
 
 /**********Styling Elements**********/
@@ -308,7 +310,7 @@ h5 {
 .modal-header {
     background-image: url('../images/sep-half.png');
     background-color: #4f4f4f;
-    color:#fff;
+    color: #fff;
 }
 
 input[type=submit] {
@@ -384,6 +386,7 @@ textarea {
   background-color: #b2c831;
 }
 
+
 /********** CUSTOMIZED BUTTON **********/
 .btnnew {
     display: inline-block;
@@ -446,16 +449,17 @@ a:hover {
   text-decoration: none;
 }
 
+
 /********** FooterWrap Section **********/
 #footerwrap {
-    background: #262626;
+    background:       #262626;
     background-image: url('../images/sep-half.png');
-    padding-top: 25px;
-    padding-bottom: 40px;
+    padding-top:      25px;
+    padding-bottom:   40px;
     border-top-style: solid;
     border-top-width: 8px;
     border-top-color: #1d1d1d;
-    text-align: center;
+    text-align:       center;
 }
 
 #footerwrap p {
@@ -470,23 +474,23 @@ a:hover {
 @media (min-width: 767px) and (max-width: 768px) {
     .info-aapl ul {
         margin-left: 10px;
-        float: left;
+        float:       left;
     }
 
     #load {
-        margin-left:5px;
-        margin-right:10px;
+        margin-left:  5px;
+        margin-right: 10px;
     }
 
     #space {
-        margin-left:5px;
-        margin-right:10px;
+        margin-left:  5px;
+        margin-right: 10px;
     }
 }
 
 @media (max-width: 800px) {
     .col-xs-8, .col-xs-10 {
-        float: none;
+        float:  none;
         margin: 0 auto;
     }
 }
