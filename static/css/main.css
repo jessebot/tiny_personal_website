@@ -1,32 +1,35 @@
-﻿/* This is built on:
- * BLOCKS - Responsive Dashboard Theme
- *
- * Copyright 2013
- * Created by: Carlos Alvarez
- * URL: http://Alvarez.is
- * Designed and built based on Twitter Bootstrap.
+﻿/* This was originally built on:
+   BLOCKS - Responsive Dashboard Theme - Copyright 2013
+   Which was designed and built based on Twitter Bootstrap and created by:
+   Carlos Alvarez
+
+   Since BLOCKS is dead since 2013, this is now a basic user linktree
+   designed and maintained by jessebot[at]linux[dot]com
  */
 
-/* COLOR REFERENCE
-- #1f1f1f (Background Color)
-- #3d3d3d (Dash-unit and half-unit Section)
-- #262626 (Footer)
-- #fa1d2d (Red - Used in selectors, parragraphs, bars and other)
-- #b2c831 (Green - Used in titles, badges, bars and other)
-- #bdbdbd & #fff (Font colors)
+/*  COLOR REFERENCE
+ |  Color  |                Used for                |
+ |:-------:|:---------------------------------------|
+ | #1f1f1f | Background Color                       |
+ | #3d3d3d | Dash-unit and half-unit Section        |
+ | #262626 | Footer                                 |
+ | #fa1d2d | Red - Used in selectors and paragraphs |
+ | #b2c831 | Green - Used in titles, badges         |
+ | #bdbdbd | Font color                             |
+ | #ffffff | Font color                             |
 */
 
 
 /********** BASE CONFIGURATIONS **********/
 
 body {
-  background:#1f1f1f;
-  font-family: 'Mononoki';
-  text-align: center;
-  color: silver;
+  background:      #1f1f1f;
+  font-family:     'Mononoki';
+  text-align:      center;
+  color:           silver;
   justify-content: center;
-  align-items: center;
-  display: flex;
+  align-items:     center;
+  display:         flex;
 }
 
 h1 {
@@ -73,7 +76,7 @@ h5 {
     background-clip: padding-box;
 }
 
-/*--- Dash Unit / Used in Dashboard page ---*/
+/* ----------------- Dash Unit ----------------- */
 .dash-unit {
     margin-bottom: 30px;
     padding-bottom: 10px;
