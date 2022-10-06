@@ -1,32 +1,34 @@
-﻿@font-face {
+﻿/* this is the file for making nerdfonts work on a website */
+
+@font-face {
   font-family: 'Mononoki';
   src: url('/static/fonts/mononoki-Regular-Nerd-Font-Complete-Mono.ttf');
 }
 
 [class^="nf-"]:before {
-	font-family: 'Mononoki';
+    font-family: 'Mononoki';
 }
 
 /* ------- social icons ----------- */
 .nf-fa-github_alt:before {
-	content: "\f113";
+    content: "\f113";
 }
 
 .nf-fa-gitlab:before {
-	content: "\f296";
+    content: "\f296";
 }
 
 .nf-fa-linkedin_square:before {
-	content: "\f08c";
+    content: "\f08c";
 }
 
 /* ------- user icons ----------- */
 .nf-fa-user_secret:before {
-	content: "\f21b";
+    content: "\f21b";
 }
 
 .nf-mdi-human:before {
-	content: "\f7e5";
+    content: "\f7e5";
 }
 
 .nf-mdi-account:before {

@@ -6,17 +6,17 @@
             <div class="dash-unit">
                 <dtitle>
                 <span class="nf-mdi-account" style="font-size: 1.5rem;"></span>
-                About {{ globals['name'] }}
+                About {{ config_vars['name'] }}
                 </dtitle>
                 <hr style="margin-bottom: 0;">
                 <img class="main-img"
-                     src="/static/img/{{ globals['profile_image'] }}"
-                     alt="{{ globals['profile_image_alt'] }}"
+                     src="/static/img/{{ config_vars['profile_image'] }}"
+                     alt="{{ config_vars['profile_image_alt'] }}"
                      style="width:200px;"
                      data-toggle="tooltip" data-placement="bottom"
-                     title="{{ globals['name'] }}">
+                     title="{{ config_vars['name'] }}">
                 <br />
-                <p>{{ globals['blurb'] }}</p>
+                <p>{{ config_vars['blurb'] }}</p>
             </div><!-- /.dash-unit -->
         </div><!-- /.col -->
     </div><!-- /.row -->
@@ -32,22 +32,21 @@
                 </center>
                 <br />
                 <center>
-                    <p>
-                    {% for link in globals['social_links'] %}
+                    <p class="social_links">
+                    {% for lnk in social_links %}
                         <!-- Linkedin -->
                         <a target="_blank"
-                           href="{{ globals['social_links'][link]['URL'] }}"
+                           href="{{ social_links[lnk]['URL'] }}"
                            data-toggle="tooltip" data-placement="left"
-                           title="{{ link }}">
-                            <span class="{{ globals['social_links'][link]['icon'] }}"
-                                style="font-size: 4rem; color: cornflowerblue;">
+                           title="{{ lnk }}">
+                            <span class="{{ social_links[lnk]['icon'] }}">
                             </span>
                         </a>
                     {% endfor %}
                     </p>
                 <hr>
                 <dtitle>
-                    <a href="{{ globals['resume_pdf_URL'] }}"
+                    <a href="{{ config_vars['resume_pdf_URL'] }}"
                        data-toggle="tooltip" data-placement="bottom"
                        title="Download Resume as a PDF"
                        style="box-shadow: none;">

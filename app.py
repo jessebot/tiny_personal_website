@@ -11,9 +11,9 @@ log.basicConfig(stream=sys.stderr, level=log.INFO)
 log.info("logging config loaded")
 
 
-def get_global_variables():
+def get_config_variables():
     """
-    Gets global variables from YAML file. Returns dict.
+    Gets config.yaml variables from YAML file. Returns dict.
     """
     with open('./config/config.yaml', 'r') as yml_file:
         doc = yaml.safe_load(yml_file)
@@ -30,5 +30,7 @@ def index():
     """
     # Grab site specific information - YAML
     log.info("Good morning, sunshine. It's index time.")
-    globals = get_global_variables()
-    return render_template('index.html', globals=globals)
+    config_vars = get_config_variables()
+    social_links = config_vars['social_links']
+    return render_template('index.html', config_vars=config_vars,
+                           social_links=social_links)
