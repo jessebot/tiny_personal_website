@@ -117,7 +117,10 @@ h5 {
     line-height: 16px;
     color: inherit;
     margin: 0 0 12px;
-    padding: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .dash-unit bold {
