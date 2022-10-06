@@ -12,7 +12,7 @@ fork_me: true
 # image shown at the front of the page, this should be in /static/img
 profile_image: 'my_picture.png'
 # image alt text
-profile_image_alt: 'Portrait selfie of a 30 year old person with an undercut and medium legnth blue hair parted to the side. They are smiling and wearing a black shirt.'
+profile_image_alt: 'Portrait selfie of a 29 year old person with an undercut and medium legnth blue hair parted to the side. They are smiling and wearing a black shirt.'
 # Your name
 name: 'Jesse Hitch'
 # Pronouns

@@ -2,7 +2,9 @@ tiny_personal_website
 =====================
 
 This is a Python based CMS (content management system) for a small personal
-website aimed at first and foremost being a resume. 
+website aimed at first and foremost being a resume.
+
+<img src="./example.png" alt="screenshot of jessebot.work which serves as an example website. It features a picture of Jesse a person with blue hair that is almost 30. a blurb about them that you can read in config/config.yaml and link icons to github, gitlab, and linkedin.">
 
 I originally wrote this 7 or 8 years ago, and recently absolutely borked my
 newer website, resulting in me quickly resurrecting this thing in about a day
@@ -66,5 +68,5 @@ And the container port of note is port 8080.
 ## Frontend Dev Notes
 I found [this guide](https://stackoverflow.com/questions/68558955/bootstrap-centering-container-in-the-middle-of-the-page)
 on vertically centering items and it helped a lot. Basically both the body and
-base container you have need to be h-100 and vh-100 and for extra security, 
+base container you have need to be h-100 and vh-100 and for extra security,
 add `min-height: 100vh;` to the CSS for the body.
