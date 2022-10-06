@@ -1,7 +1,7 @@
 tiny_personal_website
 =====================
 
-This is a small Python based personal website aimed first and foremost at being a resume. Example here:
+This is a small Python based personal website aimed first and foremost at being a resume:
 
 <img src="./example.png" alt="screenshot of jessebot.work which serves as an example website. It features a picture of Jesse a person with blue hair that is almost 30. a blurb about them that you can read in config/config.yaml and link icons to github, gitlab, and linkedin." style="width: 40%;">
 
@@ -10,7 +10,9 @@ newer website, resulting in me quickly resurrecting this thing in about a day
 and a half. This one does the same thing, but better, and faster, with less js.
 
 Feel free to take anything you need :) But keep it open source.
-You gotta. [No, like you literally have to.](./LICENSE)
+You gotta.
+
+[No, like you literally have to.](./LICENSE)
 
 
 Under the Hood
