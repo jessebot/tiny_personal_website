@@ -29,8 +29,7 @@ Under the Hood
 2. Install missing libraries if any: `pip3.10 install -r requirements.txt`
 
 3. You can configure everything (e.g. website title, your photo, quote, etc)
-   by renaming `config/config.yaml.sample` to `config.yaml` and replacing all 
-   the sample data with your own real data.
+   by editing `config.yaml` and replacing all the Jesse data with your own.
 
 5. All changes to HTML, CSS, and Python, or your core YAML will require a
    restart of gunicorn or a rebuild of the docker container.

@@ -14,7 +14,7 @@
  | #3d3d3d | Dash-unit and half-unit Section        |
  | #262626 | Footer                                 |
  | #fa1d2d | Red - Used in selectors and paragraphs |
- | #b2c831 | Green - Used in titles, badges         |
+ | #b2c831 | Green - Used in titles                 |
  | #bdbdbd | Font color                             |
  | #ffffff | Font color                             |
 */
@@ -59,12 +59,6 @@ h5 {
 
 /***********BLOCKS & WRAPS***********/
 
-.aboutText {
-    padding-left: 10px;
-    padding-right: 5px;
-    padding-bottom: 10px;
-}
-
 .main-img {
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
     margin-top: 18px;
@@ -78,7 +72,7 @@ h5 {
     background-clip: padding-box;
 }
 
-/* ----------------- Dash Unit ----------------- */
+/* ----------------------- Dash Unit -------------------------- */
 .dash-unit {
     margin-bottom:    30px;
     padding-bottom:   10px;
@@ -98,7 +92,7 @@ h5 {
 }
 
 .dash-unit:hover {
-    background-color: #4f4f4f;
+    background-color:   #3a3a3a;
     -moz-box-shadow:    3px 3px 2px 0px #151515;
     -webkit-box-shadow: 3px 3px 2px 0px #151515;
     box-shadow:         3px 3px 2px 0px #151515;
@@ -132,15 +126,15 @@ h5 {
 }
 
 .dash-unit dtitle {
-    font-size:      11px;
-    text-transform: uppercase;
-    color:          #ffffff;
-    margin:         8px;
+    font-size:          11px;
+    text-transform:     uppercase;
+    color:              #ffffff;
+    margin:             8px;
     padding-top:        4px;
     padding-bottom:     0px;
     padding-left:       0px;
     padding-right:      0px;
-    height:         inherit;
+    height:             inherit;
 }
 
 .dash-unit h1 {
@@ -162,46 +156,46 @@ h5 {
     font-size:      30px;
     line-height:    26px;
     letter-spacing: 0px;
-    color: #ffffff;
-    padding-top: 10px;
-    padding-left: 5px;
-    margin-top: 2px;
-    text-align: center;
+    color:          #ffffff;
+    padding-top:    10px;
+    padding-left:   5px;
+    margin-top:     2px;
+    text-align:     center;
 }
 
 .dash-unit h3 {
-    font-weight: 300;
-    font-size:   15px;
-    line-height: 2px;
+    font-weight:    300;
+    font-size:      15px;
+    line-height:    2px;
     letter-spacing: 0px;
-    color: #b2c831;
-    padding-top:  10px;
-    padding-left: 5px;
-    margin-top:   2px;
-    text-align:   center;
+    color:          #b2c831;
+    padding-top:    10px;
+    padding-left:   5px;
+    margin-top:     2px;
+    text-align:     center;
 }
 
 .dash-unit h4 {
-    padding-left: 5px;
-    margin-top: 2px;
-    font-size: 13px;
-    font-weight:lighter;
-    line-height: 1;
+    padding-left:   5px;
+    margin-top:     2px;
+    font-size:      13px;
+    font-weight:    lighter;
+    line-height:    1;
     letter-spacing: 0px;
-    color: #fff;
+    color:          #fff;
 }
 
 
 /**********Half-Unit / Used in index.html**********/
 .half-unit {
-    margin-bottom: 30px;
-    padding-bottom: 4px;
-    border: 1px solid #383737;
-    background-image:url('../images/sep-half.png');
-    background-color: #3d3d3d;
-    color: white;
-    height: 130px;
-    width: 18rem;
+    margin-bottom:     30px;
+    padding-bottom:    4px;
+    border:            1px solid #383737;
+    background-image:  url('../images/sep-half.png');
+    background-color:  #3d3d3d;
+    color:             white;
+    height:            130px;
+    width:             18rem;
 }
 
 .half-unit:hover {
@@ -219,11 +213,11 @@ h5 {
 }
 
 .half-unit bold{
-    font-family: 'Open Sans', sans-serif;
-    font-size:26px;
-    font-weight:bold;
-    color:#fff;
-    vertical-align:middle;
+    font-family:    'Open Sans', sans-serif;
+    font-size:      26px;
+    font-weight:    bold;
+    color:          #fff;
+    vertical-align: middle;
 }
 
 .half-unit dtitle {
@@ -283,13 +277,6 @@ h5 {
     font-size:   10px;
     font-weight: bold;
     color:       #b2c831;
-}
-
-.text p {
-    font-family: 'Open Sans', sans-serif;
-    margin-left: 8px;
-    font-size:   14px;
-    line-height: 18px;
 }
 
 .text grey {

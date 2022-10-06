@@ -1,8 +1,10 @@
 ---
 # favicon, can take any image type
 favicon: 'favicon.ico'
+# URL to the website
+website_url: 'https://jessebot.work'
 # domain name, or whatever you want the tab in the browser to say
-website_title: 'jessebot.work'
+website_title: "Jesse's resume"
 # set to false to remove fork me banner in uppper right corner
 fork_me: true
 

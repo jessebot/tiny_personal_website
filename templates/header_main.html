@@ -8,13 +8,13 @@
     <meta name="author" content="Jesse Hitch">
     <meta name="theme-color" content="#1f1f1f" />
     <link rel="icon" type="image/x-icon" href="/static/img/{{config_vars['favicon']}}">
-    <meta property="og:url" content="https://jessebot.work">
+    <meta property="og:url" content="{{ config_vars['website_url'] }}">
     <meta property="og:image" content="/static/img/{{config_vars['image']}}">
     <meta property="og:title" content="{{config_vars['website_title']}}">
     <meta property="og:description" content="Resume website for {{config_vars['name']}}">
     <meta property="og:type" content="profile">
 
-    <title>{{config_vars['website_title']}}</title>
+    <title>{{ config_vars['website_title'] }}</title>
 
     <!-- Custom styles for this template -->
     <link href="/static/css/main.css" rel="stylesheet">
