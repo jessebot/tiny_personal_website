@@ -9,13 +9,10 @@ the bottle web framework and the front end is bootstrap. YAML is used for site
 
  I originally wrote this 7 or 8 years ago, and recently absolutely borked my
  newer website, resulting in me quickly resurrecting this thing in about a
- day. It's... fine. It's not terrrible.
+ day. It's... oke :shrug:
 
- Here's the guide I used for digital ocean:
- https://docs.digitalocean.com/tutorials/app-deploy-flask-app/
-
- You want the following command plugged into where-ever this runs:
-
+ You want the following command plugged into where-ever this runs
+ (e.g. digital ocean app platform):
  ```bash
  gunicorn --worker-tmp-dir /dev/shm app:app
  ```
@@ -30,25 +27,35 @@ Under the Hood
 * The Open Source Community <3
 
 
-## Old setup
+## Setup
 
 1. Clone this github repo into your desired webroot.
 
 2. Install missing libraries if any: `pip3.10 install -r requirements.txt`
 
-3. You can configure everything (e.g. the webroot absolute path, your photo,
- quote, etc) by renaming `config/config.yaml.sample` to `config.yaml` and 
-replacing all the sample data with your own real data.
+3. You can configure everything (e.g. website title, your photo, quote, etc)
+   by renaming `config/config.yaml.sample` to `config.yaml` and replacing all 
+   the sample data with your own real data.
 
-4. The website assumes you're running on a Linux server with apache. I use the
- [mod_wsgi](https://github.com/GrahamDumpleton/mod_wsgi) apache module to
-deliver this content. 
-  + In `config/example_apache_vhost.conf` I have an example apache
-virutal host config. I recommend creating a special user and group for this
- website to run as.
-  + There is also a mandatory `config/wsgi.conf` you'll need to put in your
- apache config. You may also need to modify permissions for the socket file if
- you are running CentOS/RHEL, which will live in `/var/run/http`.
+5. All changes to HTML, CSS, and Python, or your core YAML will require a
+   restart of gunicorn or a rebuild of the docker container.
 
-5. All changes to HTML, CSS, JS, Python, or your core YAML will require an
- apache restart - with this specific configuration for the web server portion.
+6. for docker, you can just do:
+   ```bash
+   docker build . -t <name of tag you want>`
+   # if you want to test it locally, you can do this
+   docker run -p 8080:8000 <name of the tag you used>
+   ```
+   Then you can go to http://127.0.0.1:8080 in a browser to view your changes.
+
+   For testing locally, _without_ a docker rebuild:
+   ```bash
+   gunicorn app:app
+   ```
+   Then you can go to http://127.0.0.1:8000 in a browser to view your changes.
+
+## Notes
+I found [this guide](https://stackoverflow.com/questions/68558955/bootstrap-centering-container-in-the-middle-of-the-page)
+on vertically centering items and it helped a lot. Basically both the body and
+base container you have need to be h-100 and vh-100 and for extra security, 
+add `min-height: 100vh;` to the CSS for the body
