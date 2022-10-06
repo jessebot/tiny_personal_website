@@ -10,16 +10,23 @@
 }
 
 /* ------- social icons ----------- */
+
 .nf-fa-github_alt:before {
     content: "\f113";
+    font-size: 4rem;
+    color: cornflowerblue;
 }
 
 .nf-fa-gitlab:before {
     content: "\f296";
+    font-size: 4rem;
+    color: cornflowerblue;
 }
 
 .nf-fa-linkedin_square:before {
     content: "\f08c";
+    font-size: 4rem;
+    color: cornflowerblue;
 }
 
 /* ------- user icons ----------- */
