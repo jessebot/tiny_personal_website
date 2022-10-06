@@ -44,7 +44,7 @@ Under the Hood
    ```bash
    docker build . -t <name of tag you want>`
    # if you want to test it locally, you can do this
-   docker run -p 8080:8000 <name of the tag you used>
+   docker run --rm -p 8080:8000 <name of the tag you used>
    ```
    Then you can go to http://127.0.0.1:8080 in a browser to view your changes.
 
