@@ -1,33 +1,28 @@
 tiny_personal_website
 =====================
 
-THIS IS BACK FROM THE DEAD :D
+This is a Python based CMS (content management system) for a small personal
+website aimed at first and foremost being a resume. 
 
-This is a Python based CMS for a small personal website. The back end uses
-the bottle web framework and the front end is bootstrap. YAML is used for site
- specific configurations. Tested with Python 3.10.7 only.
+I originally wrote this 7 or 8 years ago, and recently absolutely borked my
+newer website, resulting in me quickly resurrecting this thing in about a day
+and a half. This one does the same thing, but better, and faster, with less js.
 
- I originally wrote this 7 or 8 years ago, and recently absolutely borked my
- newer website, resulting in me quickly resurrecting this thing in about a
- day. It's... oke :shrug:
+Feel free to take anything you need :) But keep it open source.
+You gotta. [No, like you literally have to.](./LICENSE)
 
- You want the following command plugged into where-ever this runs
- (e.g. digital ocean app platform):
- ```bash
- gunicorn --worker-tmp-dir /dev/shm app:app
- ```
-
-### Coming Soon
-better docker file
 
 Under the Hood
 --------------
-* Bootstrap v5
-* Flask
-* The Open Source Community <3
+* Bootstrap v5 - frontend js/css
+* Flask        - backend routing
+* Gunicorn     - serving website
+* YAML         - config file
+
+* The Open Source Community <3 - answers to all your questions for free
 
 
-## Setup
+## Dev and Testing
 
 1. Clone this github repo into your desired webroot.
 
@@ -53,10 +48,24 @@ Under the Hood
    ```bash
    gunicorn app:app
    ```
-   Then you can go to http://127.0.0.1:8000 in a browser to view your changes.
 
-## Notes
+Then you can go to http://127.0.0.1:8000 in a browser to view your changes.
+
+
+### Deploying on an app platform
+
+You want the following command plugged into where-ever this runs
+(e.g. digital ocean app platform):
+
+```bash
+gunicorn --worker-tmp-dir /dev/shm app:app
+```
+
+And the container port of note is port 8080.
+
+
+## Frontend Dev Notes
 I found [this guide](https://stackoverflow.com/questions/68558955/bootstrap-centering-container-in-the-middle-of-the-page)
 on vertically centering items and it helped a lot. Basically both the body and
 base container you have need to be h-100 and vh-100 and for extra security, 
-add `min-height: 100vh;` to the CSS for the body
+add `min-height: 100vh;` to the CSS for the body.
