@@ -23,11 +23,9 @@ Clone this github repo into your desired webroot, and install dependencies:
 You can configure everything (e.g. website title, your photo, quote, etc)
 by editing `config.yaml` and replacing all the Jesse data with your own.
 
-For testing locally with gunicorn, _without_ a docker rebuild, you can just do:
+For testing locally: `gunicorn app:app`
 
-`gunicorn app:app`
-
-For testing with docker locally, you can do:
+For testing locally _with docker_, you can do:
    ```bash
    docker build . -t <name of tag you want>
 
@@ -35,7 +33,6 @@ For testing with docker locally, you can do:
    # port 8080 on the container to port 8000 on your local machine
    docker run --rm -p 8000:8080 <name of the tag you used>
    ```
-
 
 Then you can go to http://127.0.0.1:8000 in a browser to view your changes.
 
