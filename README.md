@@ -7,11 +7,7 @@ I originally wrote this 7 or 8 years ago, and recently absolutely borked my
 newer website, resulting in me quickly resurrecting this thing in about a day
 and a half. This one does the same thing, but better, and faster, with less js.
 
-Feel free to take anything you need :) But keep it open source.
-You gotta.
-
-[No, like you literally have to.](./LICENSE)
-
+Feel free to take anything you need :) But keep it open source. [You gotta.](./LICENSE)
 
 Under the Hood
 --------------
