@@ -1,9 +1,7 @@
-tiny_personal_website
+Tiny Personal Website
 =====================
 
 <img src="./example.png" alt="screenshot of jessebot.work which serves as an example website. It features a picture of Jesse a person with blue hair that is almost 30. a blurb about them that you can read in config/config.yaml and link icons to github, gitlab, and linkedin." style="width: 40%;" align="left">
-
-[![Github tag](https://badgen.net/github/tag/Naereen/Strapdown.js)](https://github.com/Naereen/Strapdown.js/tags/)
 
 This is a small Python based personal website aimed first and foremost at being a resume.
 I originally wrote this 7 or 8 years ago, and recently absolutely borked my
