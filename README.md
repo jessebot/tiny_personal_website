@@ -17,17 +17,17 @@ Feel free to take anything you need :) But keep it open source.
 ## Getting Started
 
 Clone this github repo into your desired webroot, and install dependencies:
+
 `pip3.10 install -r requirements.txt`
 
 You can configure everything (e.g. website title, your photo, quote, etc)
 by editing `config.yaml` and replacing all the Jesse data with your own.
 
-All changes to HTML, CSS, and Python, or your core YAML will require a
-restart of gunicorn or a rebuild of the docker container.
+For testing locally with gunicorn, _without_ a docker rebuild, you can just do:
 
-### Testing
+`gunicorn app:app`
 
-For docker, you can just do:
+For testing with docker locally, you can do:
    ```bash
    docker build . -t <name of tag you want>
 
@@ -36,10 +36,6 @@ For docker, you can just do:
    docker run --rm -p 8000:8080 <name of the tag you used>
    ```
 
-For testing locally with gunicorn, _without_ a docker rebuild:
-   ```bash
-   gunicorn app:app
-   ```
 
 Then you can go to http://127.0.0.1:8000 in a browser to view your changes.
 
