@@ -7,32 +7,37 @@
 
 [class^="nf-"]:before {
     font-family: 'Mononoki';
+    font-size: 1.3rem;
+    color: cornflowerblue;
+    /* Better Font Rendering (from devicons, et al) */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
 
 /* ------- social icons ----------- */
 
 .nf-fa-github_alt:before {
     content: "\f113";
-    font-size: 4rem;
-    color: cornflowerblue;
+}
+
+.nf-fa-github_alt_link:before {
+    content: "\f113";
+    font-size: 4rem !important;
 }
 
 .nf-fa-gitlab:before {
     content: "\f296";
-    font-size: 4rem;
-    color: cornflowerblue;
+    font-size: 4rem !important;
 }
 
 .nf-fa-linkedin_square:before {
     content: "\f08c";
-    font-size: 4rem;
-    color: cornflowerblue;
+    font-size: 4rem !important;
 }
 
+
 /* ------- user icons ----------- */
-.nf-fa-user_secret:before {
-    content: "\f21b";
-}
 
 .nf-mdi-human:before {
     content: "\f7e5";
@@ -40,4 +45,8 @@
 
 .nf-mdi-account:before {
     content: "\f503";
+}
+
+.nf-mdi-forklift:before {
+  content: "\fcc7";
 }

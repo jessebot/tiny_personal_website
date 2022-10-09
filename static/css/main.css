@@ -1,7 +1,5 @@
-﻿/* This was originally built on:
-   BLOCKS - Responsive Dashboard Theme - Copyright 2013
-   Which was designed and built based on Twitter Bootstrap and created by:
-   Carlos Alvarez
+﻿/* Forked from:
+   BLOCKS - Copyright 2013 - Carlos Alvarez
 
    Since BLOCKS is dead since 2013, this is now a basic user linktree
    designed and maintained by jessebot[at]linux[dot]com
@@ -11,7 +9,7 @@
  |  Color  |                Used for                |
  |:-------:|:---------------------------------------|
  | #1f1f1f | Background Color                       |
- | #3d3d3d | Dash-unit and half-unit Section        |
+ | #3d3d3d | cardclone and half-unit Section        |
  | #262626 | Footer                                 |
  | #fa1d2d | Red - Used in selectors and paragraphs |
  | #b2c831 | Green - Used in titles                 |
@@ -73,7 +71,8 @@ h5 {
 }
 
 /* ----------------------- Dash Unit -------------------------- */
-.dash-unit {
+
+.cardclone {
     margin-bottom:    30px;
     padding-bottom:   10px;
     background-image: url('../images/sep-half.png');
@@ -91,21 +90,21 @@ h5 {
     filter: alpha(opacity=97);
 }
 
-.dash-unit:hover {
+.cardclone:hover {
     background-color:   #3a3a3a;
     -moz-box-shadow:    3px 3px 2px 0px #151515;
     -webkit-box-shadow: 3px 3px 2px 0px #151515;
     box-shadow:         3px 3px 2px 0px #151515;
 }
 
-.dash-unit hr {
+.cardclone hr {
     border:           0;
     border-top:       1px solid #151515;
     border-top-style: dashed;
     margin-top:       3px;
 }
 
-.dash-unit p {
+.cardclone p {
     font-size: 14px;
     font-weight: 200;
     line-height: 16px;
@@ -117,27 +116,47 @@ h5 {
     padding-right: 20px;
 }
 
-.dash-unit bold {
-    font-family: 'Open Sans', sans-serif;
+.cardclone bold {
     font-size: 26px;
     font-weight: bold;
-    color: #fff;
+    color: #ffffff;
     vertical-align: middle;
 }
 
-.dash-unit dtitle {
+.c-title {
     font-size:          11px;
     text-transform:     uppercase;
     color:              #ffffff;
-    margin:             8px;
-    padding-top:        4px;
+    margin:             1px;
+    padding-top:        0px;
+    padding-bottom:     2px;
+    padding-left:       0px;
+    padding-right:      0px;
+    height:             inherit;
+}
+
+.c-title-social {
+    margin:             5px;
+    font-size:          11px;
+    text-transform:     uppercase;
+    color:              #ffffff;
+    padding:            0px;
+    height:             inherit;
+}
+
+.c-footer-link {
+    font-size:          11px;
+    text-transform:     uppercase;
+    color:              #ffffff;
+    margin:             2px;
+    padding-top:        3px;
     padding-bottom:     0px;
     padding-left:       0px;
     padding-right:      0px;
     height:             inherit;
 }
 
-.dash-unit h1 {
+.cardclone h1 {
     font-family:    'Raleway', sans-serif;
     font-weight:    300;
     font-size:      20px;
@@ -150,7 +169,7 @@ h5 {
     text-align:     center;
 }
 
-.dash-unit h2 {
+.cardclone h2 {
     font-family:    'Open Sans', sans-serif;
     font-weight:    bold;
     font-size:      30px;
@@ -163,7 +182,7 @@ h5 {
     text-align:     center;
 }
 
-.dash-unit h3 {
+.cardclone h3 {
     font-weight:    300;
     font-size:      15px;
     line-height:    2px;
@@ -175,14 +194,14 @@ h5 {
     text-align:     center;
 }
 
-.dash-unit h4 {
+.cardclone h4 {
     padding-left:   5px;
     margin-top:     2px;
     font-size:      13px;
     font-weight:    lighter;
     line-height:    1;
     letter-spacing: 0px;
-    color:          #fff;
+    color:          #ffffff;
 }
 
 
@@ -216,11 +235,11 @@ h5 {
     font-family:    'Open Sans', sans-serif;
     font-size:      26px;
     font-weight:    bold;
-    color:          #fff;
+    color:          #ffffff;
     vertical-align: middle;
 }
 
-.half-unit dtitle {
+.half-unit c-title {
     font-size: 10px;
     text-transform: uppercase;
     color: #ffffff;
@@ -249,7 +268,7 @@ h5 {
     font-weight: lighter;
     line-height: 1;
     letter-spacing: 0px;
-    color: #fff;
+    color: #ffffff;
 }
 
 /**********Styling Elements**********/
@@ -300,14 +319,14 @@ h5 {
 .modal-header {
     background-image: url('../images/sep-half.png');
     background-color: #4f4f4f;
-    color: #fff;
+    color: #ffffff;
 }
 
 input[type=submit] {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     background: #b2c831;
-    color: #fff;
+    color: #ffffff;
     border: none;
     padding: 8px 28px 10px 26px;
     *-webkit-border-radius: 4px;
@@ -438,25 +457,6 @@ a:hover {
   color: #dff948;
   text-decoration: none;
 }
-
-
-/********** FooterWrap Section **********/
-#footerwrap {
-    background:       #262626;
-    background-image: url('../images/sep-half.png');
-    padding-top:      25px;
-    padding-bottom:   40px;
-    border-top-style: solid;
-    border-top-width: 8px;
-    border-top-color: #1d1d1d;
-    text-align:       center;
-}
-
-#footerwrap p {
-    color:     white;
-    font-size: 12px;
-}
-
 
 /********** Media Styles **********/
 

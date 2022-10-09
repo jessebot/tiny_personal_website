@@ -1,14 +1,15 @@
 {% include('header_main.html') %}
-<div class="container d-flex align-items-center vh-100">
 
+<div class="container d-flex align-items-center vh-100">
     <!-- user photo, name, and blurb -->
     <div class="row">
         <div class="col-4">
-            <div class="dash-unit">
-                <dtitle>
-                <span class="nf-mdi-account" style="font-size: 1.2rem;"></span>
+            <div class="cardclone">
+                <div class='c-title'>
+                    <span class="nf-mdi-account">
+                    </span>
                 About {{ config_vars['name'] }}
-                </dtitle>
+                </div>
                 <hr style="margin-bottom: 0;">
                 <img class="main-img"
                      src="/static/img/{{ config_vars['profile_image'] }}"
@@ -17,7 +18,7 @@
                      data-toggle="tooltip" data-placement="bottom"
                      title="{{ config_vars['name'] }}">
                 <br />
-                <dtitle>
+                <div class='c-title'>
                     <a href="https://pronouns.org/what-and-why"
                        class="pronouns"
                        style="color: cornflowerblue;">
@@ -26,14 +27,15 @@
                     <a href="https://pronouns.org/they-them">
                         {{ config_vars['pronouns'] }}&nbsp;
                     </a>
-                </dtitle>
+                </div>
                 <p>{{ config_vars['blurb'] }}</p>
-            </div><!-- /.dash-unit -->
-        </div><!-- /.col -->
-    </div><!-- /.row -->
+            </div>
+        </div>
+    </div>
 
-    <div class="dash-unit">
-        <dtitle>Social Links</dtitle>
+    <!-- social links -->
+    <div class="cardclone">
+        <div class='c-title-social'>Social Links</div>
         <hr>
         &nbsp;&nbsp;
         {% for lnk in social_links %}
@@ -47,15 +49,15 @@
             </a>
         {% endfor %}
         <hr>
-        <dtitle>
+        <div class='c-footer-link'>
             <a href="{{ config_vars['resume_pdf_URL'] }}"
                data-toggle="tooltip" data-placement="bottom"
-               title="Download Resume as a PDF"
-               style="box-shadow: none;">
+               title="Download Resume as a PDF">
                 Download Resume
             </a>
-        </dtitle>
-    </div><!-- /.dash-unit -->
+        </div>
+    </div><!-- /.cardclone -->
 
 </div><!-- /.container MAIN-->
+
 {% include('footer_main.html') %}

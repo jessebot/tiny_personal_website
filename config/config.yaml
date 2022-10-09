@@ -42,7 +42,7 @@ social_links:
     # Full URL to your social link
     URL: 'https://github.com/jessebot'
     # can be any glyph in nerdfonts
-    icon: 'nf-fa-github_alt'
+    icon: 'nf-fa-github_alt_link'
   gitlab:
     URL: 'https://gitlab.com/jessebot'
     icon: "nf-fa-gitlab"
