@@ -1,4 +1,4 @@
-Tiny Personal Website
+Tiny Personal Website [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](./LICENSE)
 =====================
 This is a small Python based personal website aimed first and foremost at being a resume.
 I originally wrote this 7 or 8 years ago, and recently absolutely borked my
@@ -11,7 +11,6 @@ Feel free to fork this and make it your own, but keep it open source.
 [![made-with-python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
 [![made-wth-flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/en/2.2.x/)
 [![made-with-bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
-[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](./LICENSE)
 
 <img src="./example.png" alt="screenshot of jessebot.work which serves as an example website. It features a picture of Jesse a person with blue hair that is almost 30. a blurb about them that you can read in config/config.yaml and link icons to github, gitlab, and linkedin." style="width: 40%;" align="left">
 
