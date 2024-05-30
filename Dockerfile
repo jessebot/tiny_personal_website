@@ -8,7 +8,7 @@ WORKDIR /app
 
 COPY pyproject.toml poetry.lock README.md tiny_personal_website /app/
 
-RUN apk add build-base libffi-dev && \
+RUN apk add --no-cache build-base libffi-dev && \
     pip install poetry && \
     poetry config virtualenvs.in-project true && \
     poetry install --no-ansi --no-root
@@ -37,6 +37,4 @@ RUN addgroup --gid 1000 app && \
 # `1000`.
 USER 1000
 
-# CMD ["/app/.venv/bin/gunicorn", "--bind", ":80", "app:app"]
-# CMD ["/app/.venv/bin/gunicorn"  , "-b", "0.0.0.0:8080", "app:app"]
 CMD ["/app/.venv/bin/gunicorn"  , "-b", "0.0.0.0:8080", "tiny_personal_website:app"]
