@@ -19,6 +19,8 @@ RUN apk add build-base libffi-dev && \
 
 FROM python:3.12-alpine as deploy
 
+ENV CONFIG_FILE="/app/tiny_personal_website/config/config.yaml"
+
 WORKDIR /app
 
 # copy the already built package

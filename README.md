@@ -35,6 +35,14 @@ docker run --rm -p 8000:8080 <name of the tag you used>
 
 Then you can go to http://127.0.0.1:8000 in a browser to view your changes.
 
+You can now use an environment variable to set the location of the `config.yaml` to use. Here's an example if you have your config file in your current directory:
+
+```bash
+# mount the current directory to /config, and set the CONFIG_FILE env var to /config/config.yaml
+# this assumes you've built or pulled jessebot/tiny-personal-website:latest locally
+docker run --rm -v .:/config -e CONFIG_FILE=/config/config.yaml -p 8000:8080 jessebot/tiny-personal-website:latest
+```
+
 ### Deploying on an app platform
 
 You want the following command plugged into where-ever this runs
