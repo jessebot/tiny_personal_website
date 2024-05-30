@@ -1,0 +1,35 @@
+[tool.poetry]
+name          = "tiny_personal_website"
+version       = "0.2.0"
+description   = "basic resume site written with flask and bootstrap and configurable with a YAML file"
+authors       = ["jessebot <jessebot@linux.com>"]
+license       = "AGPL-3.0-or-later"
+readme        = "README.md"
+packages      = [{include = "tiny_personal_website"}]
+repository    = "http://github.com/jessebot/tiny-personal-website"
+keywords      = ["resume", "flask"]
+classifiers   = ["Programming Language :: Python :: 3.12",
+                 "Operating System :: MacOS :: MacOS X",
+                 "Operating System :: POSIX :: Linux",
+                 "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)"]
+include       = ["tiny_personal_website/config",
+                 "tiny_personal_website/static",
+                 "tiny_personal_website/templates"]
+
+[tool.poetry.urls]
+"Bug Tracker" = "http://github.com/jessebot/tiny-personal-website/issues"
+
+[tool.poetry.dependencies]
+python   = "^3.12"
+Flask    = "^3.0.3"
+gunicorn = "^22.0.0"
+PyYAML   = "^6.0.1"
+
+# [tool.poetry.plugins."tiny-personal-website.application.plugin"]
+# "tiny-personal-website" = "tiny_personal_website:main"
+# [tool.poetry.scripts]
+# tiny-personal-website = "tiny_personal_website:main"
+
+[build-system]
+requires      = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
