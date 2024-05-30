@@ -1,6 +1,6 @@
-#!/usr/bin/env python3.10
-# JesseBot@Linux.com
+# Author: JesseBot@Linux.com
 # last update 2022-10-07 17:06:07.0 +0200
+
 from flask import Flask
 from flask import render_template
 import logging as log
