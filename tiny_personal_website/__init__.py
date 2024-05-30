@@ -5,17 +5,20 @@ from flask import Flask
 from flask import render_template
 import logging as log
 from os import environ as env
+from os import path
 import sys
 import yaml
+
+PWD = path.dirname(__file__)
+# get config file location from env vars
+CONFIG_FILE = env.get("CONFIG_FILE", f"{PWD}/config/config.yaml")
 
 # set logging
 log.basicConfig(stream=sys.stderr, level=log.INFO)
 log.info("tiny personal website logging config loaded")
 
-# get config file location from env vars
-CONFIG_FILE = env.get("CONFIG_FILE", "./config/config.yaml")
 
-def get_config_variables():
+def get_config_variables() -> dict:
     """
     Gets config.yaml variables from YAML file. Returns dict.
     """

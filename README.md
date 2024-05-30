@@ -23,14 +23,29 @@ Clone this github repo into your desired webroot, and install dependencies with 
 You can configure everything (e.g. website title, your photo, quote, etc)
 by editing `tiny_personal_website/config/config.yaml` and replacing all the Jesse data with your own.
 
+### Testing Locally
+
+```bash
+# get into a poetry shell
+poetry shell
+
+# run gunicorn
+gunicorn tiny_personal_website:app
+```
+
+Then you can go to http://127.0.0.1:8000 in a browser to view your changes.
+
+#### Docker
+
 For testing locally with docker, you can do:
 
 ```bash
-docker build . -t <name of tag you want>
+# this tag can be anything, but this is typically what I do locally
+docker build . -t jessebot/tiny-personal-website:dev
 
 # to test locally, you can do -p 8000:8080 to forward
 # port 8080 on the container to port 8000 on your local machine
-docker run --rm -p 8000:8080 <name of the tag you used>
+docker run --rm -p 8000:8080 jessebot/tiny-personal-website:dev
 ```
 
 Then you can go to http://127.0.0.1:8000 in a browser to view your changes.
@@ -40,7 +55,7 @@ You can now use an environment variable to set the location of the `config.yaml`
 ```bash
 # mount the current directory to /config, and set the CONFIG_FILE env var to /config/config.yaml
 # this assumes you've built or pulled jessebot/tiny-personal-website:latest locally
-docker run --rm -v .:/config -e CONFIG_FILE=/config/config.yaml -p 8000:8080 jessebot/tiny-personal-website:latest
+docker run --rm -v .:/config -e CONFIG_FILE=/config/config.yaml -p 8000:8080 jessebot/tiny-personal-website:dev
 ```
 
 ### Deploying on an app platform
@@ -49,7 +64,7 @@ You want the following command plugged into where-ever this runs
 (e.g. digital ocean app platform):
 
 ```bash
-gunicorn --worker-tmp-dir /dev/shm app:app
+gunicorn --worker-tmp-dir /dev/shm tiny_personal_website:app
 ```
 
-And the container port of note is port 8080.
+And the container port of note is port `8080`.

@@ -38,4 +38,5 @@ RUN addgroup --gid 1000 app && \
 USER 1000
 
 # CMD ["/app/.venv/bin/gunicorn", "--bind", ":80", "app:app"]
-CMD ["/app/.venv/bin/gunicorn"  , "-b", "0.0.0.0:8080", "app:app"]
+# CMD ["/app/.venv/bin/gunicorn"  , "-b", "0.0.0.0:8080", "app:app"]
+CMD ["/app/.venv/bin/gunicorn"  , "-b", "0.0.0.0:8080", "tiny_personal_website:app"]
