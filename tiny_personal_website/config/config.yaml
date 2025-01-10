@@ -15,7 +15,7 @@ fork_me: true
 profile_image: 'my_picture.png'
 
 # image alt text
-profile_image_alt: 'Portrait selfie of a 31 year old person with an olive skin tone. They have an undercut and medium legnth blue hair parted to the side. They are smiling and wearing a black shirt.'
+profile_image_alt: 'Portrait selfie of a 32 year old person with an olive skin tone. They have an undercut and medium legnth blue hair parted to the side. They are smiling and wearing a black shirt.'
 
 # Your name
 name: 'Jesse Hitch'
@@ -27,7 +27,7 @@ pronouns: 'they/them'
 blurb: "You can probably call me if there's a problem with Kubernetes, CI/CD, a Python app, or you need help with most things to do with the web. I also put too much effort into terminal based interfaces, and if you let me, will draw pictures of tech stuff."
 
 # Job Title
-occupation: 'Senior DevOps Engineer'
+occupation: 'Senior Reliability Engineer'
 # Skills - what you're good at.
 skills:
   - linux
@@ -40,7 +40,7 @@ skills:
 likes:
   - comfy couches
   - videogames
-  - analogies
+  - tamagotchis
 
 # social links you want to display on the profile
 social_links:
@@ -58,6 +58,16 @@ social_links:
   linkedin:
     URL: 'https://www.linkedin.com/in/jesse-hitch'
     icon: 'nf-fa-linkedin_square'
+
+  # mastodon is optional
+  mastodon:
+    URL: 'https://social.smallhack.org/@jessebot'
+    icon: "nf-fa-mastodon"
+
+  # fedi is optional
+  # fedi:
+  #   URL: 'https://social.smallhack.org/@jessebot'
+  #   icon: "nf-fa-fediverse"
 
 # this can be from any provider, but has to download a PDF file
 resume_pdf_URL: "https://docs.google.com/document/d/1O-qsyVP444QeaBi9EwygDlGzIWvMMUJP80cPsk2Z6lg/export?format=pdf"

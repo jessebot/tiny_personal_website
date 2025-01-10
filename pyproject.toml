@@ -1,6 +1,6 @@
 [tool.poetry]
 name          = "tiny_personal_website"
-version       = "0.2.0"
+version       = "0.3.0"
 description   = "basic resume site written with flask and bootstrap and configurable with a YAML file"
 authors       = ["jessebot <jessebot@linux.com>"]
 license       = "AGPL-3.0-or-later"
