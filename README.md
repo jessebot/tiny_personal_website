@@ -68,3 +68,7 @@ gunicorn --worker-tmp-dir /dev/shm tiny_personal_website:app
 ```
 
 And the container port of note is port `8080`.
+
+### Attribution
+
+Made with [OpenWeb Icons Set](https://iconduck.com/sets/openweb-icons-set) and [Nerd Fonts](https://www.nerdfonts.com/).

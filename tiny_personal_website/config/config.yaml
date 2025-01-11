@@ -12,10 +12,10 @@ website_title: "Jesse's resume"
 fork_me: true
 
 # image shown at the front of the page, this should be in /static/img
-profile_image: 'my_picture.png'
+profile_image: 'my_picture.jpg'
 
 # image alt text
-profile_image_alt: 'Portrait selfie of a 32 year old person with an olive skin tone. They have an undercut and medium legnth blue hair parted to the side. They are smiling and wearing a black shirt.'
+profile_image_alt: 'Selfie of a 32 year old person with a light olive skin tone. They have short blue hair with dark brown hair on the sides. They are wearing a white N95 mask and a black metal shirt that says Baldurs Gate, along with black buisness shorts. On their wrist, you can see them wearing a Tamagotchi Uni with a black wrist band'
 
 # Your name
 name: 'Jesse Hitch'
@@ -70,4 +70,4 @@ social_links:
   #   icon: "nf-fa-fediverse"
 
 # this can be from any provider, but has to download a PDF file
-resume_pdf_URL: "https://docs.google.com/document/d/1O-qsyVP444QeaBi9EwygDlGzIWvMMUJP80cPsk2Z6lg/export?format=pdf"
+resume_pdf_URL: "https://cloud.vleermuis.tech/s/Rm726tDLisDqpDZ"
