@@ -60,14 +60,14 @@ social_links:
     icon: 'nf-fa-linkedin_square'
 
   # mastodon is optional
-  mastodon:
-    URL: 'https://social.smallhack.org/@jessebot'
-    icon: "nf-fa-mastodon"
+  # mastodon:
+  #   URL: 'https://social.smallhack.org/@jessebot'
+  #   icon: "nf-fa-mastodon"
 
   # fedi is optional
-  # fedi:
-  #   URL: 'https://social.smallhack.org/@jessebot'
-  #   icon: "nf-fa-fediverse"
+  fediverse:
+    URL: 'https://social.smallhack.org/@jessebot'
+    icon: "nf-fa-mastodon"
 
 # this can be from any provider, but has to download a PDF file
 resume_pdf_URL: "https://cloud.vleermuis.tech/s/Rm726tDLisDqpDZ"
