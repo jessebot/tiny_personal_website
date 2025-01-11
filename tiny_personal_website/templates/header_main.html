@@ -8,6 +8,11 @@
     <meta name="author" content="Jesse Hitch">
     <meta name="theme-color" content="#1f1f1f" />
     <link rel="icon" type="image/x-icon" href="/static/img/{{config_vars['favicon']}}">
+    {% for lnk in social_links %}
+      {% if lnk == "fediverse" %}
+      <link rel="me" href="{{ social_links[lnk]['URL'] }}">
+      {% endif %}
+    {% endfor %}
     <meta property="og:url" content="{{ config_vars['website_url'] }}">
     <meta property="og:image" content="/static/img/{{config_vars['image']}}">
     <meta property="og:title" content="{{config_vars['website_title']}}">
