@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Mononoki';
-  src: url('/static/fonts/mononoki-Regular-Nerd-Font-Complete-Mono.ttf');
+  src: url('/static/fonts/MononokiNerdFont-Regular.ttf');
 }
 
 [class^="nf-"]:before {
