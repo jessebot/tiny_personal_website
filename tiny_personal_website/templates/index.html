@@ -44,7 +44,9 @@
             <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
             <a target="_blank"
                href="{{ social_links[lnk]['URL'] }}"
-               data-toggle="tooltip" data-placement="left"
+               rel="me"
+               data-toggle="tooltip"
+               data-placement="left"
                title="{{ lnk }}">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-10 0 1034 1024" width="64px" height="64px">
                <path fill="cornflowerblue"
@@ -71,6 +73,7 @@
         <div class='c-footer-link'>
             <a href="{{ config_vars['resume_pdf_URL'] }}"
                data-toggle="tooltip" data-placement="bottom"
+               target="_blank"
                title="View or Download Resume">
                 View or Download Resume
             </a>
