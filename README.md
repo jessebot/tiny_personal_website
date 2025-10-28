@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repo has been migrated to https://git.smallhack.org/jessebot/tiny_personal_website 
+
 # Tiny Personal Website [![AGPL license](https://img.shields.io/badge/License-AGPL-blue.svg)](./LICENSE)
 
 This is a small Python based personal website aimed first and foremost at being a resume.
